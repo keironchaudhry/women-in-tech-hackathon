@@ -54,7 +54,12 @@ In case you've pushed changes and this message doesn't appear, don't worry, just
 
 * Once you've begun a PR, it will appear in the "Pull Requests" (next to "Issues") part of the GitHub repository, and you can manage it from there before merging your changes with `main`.
 
+![pull-request-count](/documentation/PR%20and%20branch%20instructions/pull%20request%20count.png)
+
 * Please always tag reviewers (you can tag anybody or everybody) to take a look at the changes before merging.
+
+![pull-request-reviewers](/documentation/PR%20and%20branch%20instructions/reviewers.png)
+![pull-request-button](/documentation/PR%20and%20branch%20instructions/merge%20pull%20request%20button.png)
 
 
 **Potential problems**
