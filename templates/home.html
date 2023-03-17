@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Women in Tech Hackathon</h1>
+    <p>Hi! I'm NASA mathematician Katherine Johnson. Ask me anything!</p>
+    <form method="POST">
+        <input id="user_message" name="user_message"></input><br>
+        <button type="submit">Submit</button>
+    </form>
+    <p>{{user_message}}</p>
+    <p>{{reply}}</p>
+{% endblock %}
