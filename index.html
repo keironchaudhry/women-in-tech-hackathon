@@ -4,37 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Women in Tech Hackathon, an AI chatbot to address the lack of women representaions/role models in tech"
-    <link rel="stylesheet" href="">
+    <meta name="description" content="Women in Tech Hackathon, an AI chatbot to address the lack of women representaions/role models in tech">
+     <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>Women in Tech</title>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <h1>Team AI</h1>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Person</a></li>
-                <li><a href="#">Chat</a></li>
-            </ul>
-        </nav>
+    <header class="container-fluid align-items-center fixed-top">
+        <!-- Navbar with bootstrap classes -->
+        <nav class="navbar navbar-expand-md container-fluid">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">ChatWIT</a>
+              <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars icon" aria-hidden="true"></i>
+                <span class="sr-only">Hamburger Icon</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item ">
+                        <a class="nav-link active nav-active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#">Woman in Tech</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+          </nav>
     </header>
-    <section>
-        Main page
-        Description and 
-        Purpose
+
+    <!--Main Section-->
+    <section class="main-section d-flex align-items-center container-fluid">
+       <div class="row main-section-div">
+        <!-- Main Text h1 and description -->
+            <div class="col-12 md-auto">
+                <h1 class="text-white">ChatWIT</h1>
+                <p class="text-white">Engage in a conversation with famous women in tech through our AI-powered chatbot. Ask questions about their work and challenges they faced. Choose from figures such as Ada Lovelace or Grace Hopper. Get insights and stories from women who made their mark in the tech industry.</p>
+                <a class="btn btn-pink text-white" href="#">Engage Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
     </section>
-    <section>
-        Dashboard
+    <!--About Section-->
+    <section class="pt-5 about-section pb-5">
+        <div class="container-fluid about-div">
+            <div class="row">
+                <!-- 2 columns inside the row -->
+              <div class="col-md-6">
+                <h2>Chat with Women in Tech History</h2>
+                <div class="about-text">
+                    <p>Welcome to ChatWIT, a project that lets you engage in a conversation with some of the most iconic women in the tech industry. Have you ever wondered what it was like to work alongside Ada Lovelace, the world's first programmer, or Grace Hopper, who pioneered the development of computer programming languages? Now, you can experience it firsthand with our AI-powered chatbot.</p>
+                     <!-- 3 Womans imgs div -->
+                    <div class="about-imgs d-flex gap-3 flex-wrap">
+                        <img class="img-about" src="./assets/imgs/ada.jpg" alt="Ada Lovelace">
+                        <img class="img-about" src="./assets/imgs/grace.jpg" alt="Grace hopper">
+                        <img class="img-about" src="./assets/imgs/katherine.jpg" alt="Katherine johnson">
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- 2 logos imgs div -->
+                <div class="about-imgs d-flex gap-3 flex-wrap mt-4">
+                    <img class="img-about" src="./assets/imgs/ailogo.jpg" alt="Ada Lovelace">
+                    <img class="img-about" src="./assets/imgs/female-simbol.jpg" alt="Grace hopper">
+                </div>
+                <h2 class="mt-4">Ask the Tech Legends</h2>
+                <div class="about-text">
+                    <p>You can ask questions about their work, their personal life, and the challenges they faced during their careers, and the AI will answer as if it were that person. You'll gain a unique insight into the achievements and contributions of these remarkable women, and learn how they paved the way for women in tech today.</p>
+                    <p>We believe that by showcasing their achievements, we can inspire future generations of women to pursue their dreams in tech.</p>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
-    <section>
-        Chat-interface
-    </section>
-    <footer>
-        Footer content
+    <footer  class="d-flex align-items-center justify-content-between">
+            <p class="m-0">© 2023 All Rights Reserved</p>
+            <p class="navbar-brand">ChatWIT</p>
     </footer>
-   
+    <!-- bootstrap 5 script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Font Awesome icons kit script -->
+    <script src="https://kit.fontawesome.com/7f07b7fc74.js" crossorigin="anonymous"></script>
 </body>
 </html>
