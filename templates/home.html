@@ -1,12 +1,17 @@
-{% extends "base.html" %}
-
-{% block content %}
-    <h1>Women in Tech Hackathon</h1>
-    <p>Hi! I'm NASA mathematician Katherine Johnson. Ask me anything!</p>
-    <form method="POST">
-        <input id="user_message" name="user_message"></input><br>
-        <button type="submit">Submit</button>
-    </form>
-    <p>{{user_message}}</p>
-    <p>{{reply}}</p>
+{% extends "base.html" %} {% block content %}
+<h1>Women in Tech Hackathon</h1>
+<p>Hi! I'm NASA mathematician Katherine Johnson. Ask me anything!</p>
+{% for message in message_history%} {% if message %}
+<p>{{message}}</p>
+{% endif %} {% endfor %}
+<form method="POST">
+    <input id="user_message" name="user_message" /><br />
+    <input
+        type="hidden"
+        id="message_history"
+        name="message_history"
+        value="{% for message in message_history%}{% if message %}|{{message}}{% endif %}{% endfor %}"
+    />
+    <button type="submit">Submit</button>
+</form>
 {% endblock %}
