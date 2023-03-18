@@ -67,7 +67,12 @@ nav {
 .img-about {
     border-radius: 5px;
 }
-
+/*Bio section*/
+.img-bio {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
 /*-------------------------------- Footer*/
 footer {
     background-color: var(--black-color);
