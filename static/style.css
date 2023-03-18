@@ -139,6 +139,34 @@ footer {
   width: 100%;
   height: 60px; /* Height of the footer */
 }
+
+/*-------------------------------- Chat */
+.chat-container {
+  overflow-y: auto;
+  height: 75vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.chat-card {
+  border-radius: 10px;
+}
+
+.bg-reply {
+  background-color: #feefff!important;
+}
+
+.chat-sidebar-link:hover {
+  background-color: #2d3338;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #f8d2fa;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(216, 92, 220,.18);
+}
 /*-------------------------------- Buttons*/
 .btn-pink {
   background-color: var(--pink-color);
