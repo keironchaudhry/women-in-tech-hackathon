@@ -87,11 +87,38 @@ nav .nav-item a:hover {
   border-radius: 5px;
 }
 /*Bio section*/
+#bio-section {
+  height: 2000px;
+}
+.bio {
+  width: 100%;
+  height: 500px;
+}
+.bio-div-img {
+  width: 20%;
+  height: 500px;
+  float: left;
+}
+.bio-txt {
+  width: 70%;
+  height: 500px;
+  float: right;
+}
 .img-bio {
   border-radius: 50%;
   height: 200px;
   width: 200px;
 }
+/*
+.bio-img-right {
+  width: 20%;
+  float: right;
+}
+.bio-txt-left {
+  width: 70%;
+  height: 500px;
+  float: left;
+} */
 /*Selection section*/
 .card {
   border-radius: 10px;
