@@ -12,7 +12,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/static/style.css" />
+
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
@@ -23,7 +24,7 @@
   <body>
     <header class="align-items-center">
       <!-- Navbar with bootstrap classes -->
-      <nav class="navbar navbar-expand-md container-fluid fixed-top" id="nav">
+      <nav class="navbar navbar-expand-md container-fluid fixed-top {% if request.endpoint == 'selection' -%}nav-bg{%- endif %}" id="nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">ChatWIT</a>
           <button
