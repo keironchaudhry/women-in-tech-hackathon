@@ -160,7 +160,7 @@ footer {
   padding-left: 5px;
 }
 /*-------------------------------- Media queries*/
-@media (min-width: 990px) and (max-width: 1274px) {
+@media (min-width: 990px) and (max-width: 1280px) {
   .img-about2 {
      width: 72%;
   }
