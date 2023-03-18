@@ -143,7 +143,33 @@
       name="message_history"
       value="{% for message in message_history%}{% if message %}|{{message}}{% endif %}{% endfor %}"
     />
-    <button type="submit">Submit</button>
+    <button type="button" onClick="sendMessage()">Submit</button>
   </form>
 </section>
+<script type="application/javascript">
+    const fetchURL = {{ url_for("fetch")|tojson }}
+    const userMessage = document.getElementById('user_message')
+    function sendMessage() {
+        let messageData = {
+            "userMessage": userMessage.value,
+        }
+        console.log(userMessage)
+        let jsonRequest = {
+            cache: "no-cache",
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(messageData),
+        }
+        fetch(fetchURL, jsonRequest)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                console.log("POST data:");
+                console.log(data);
+            });
+    }
+</script>
 {% endblock %}

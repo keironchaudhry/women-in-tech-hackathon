@@ -69,6 +69,22 @@ def home():
     return render_template("home.html")
 
 
+@app.route("/chat")
+def chat():
+    return render_template("chat.html")
+
+
+@app.route("/fetch", methods=["GET", "POST"])
+def fetch():
+    if request.method == "GET":
+        message = {"greeting": "Hello from Flask!"}
+        return jsonify(message)
+
+    if request.method == "POST":
+        print(request.get_json())
+        return request.get_json(), 200
+
+
 if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP"),
