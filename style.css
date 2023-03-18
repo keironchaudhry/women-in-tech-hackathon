@@ -1,16 +1,59 @@
 /*-------------------------------- Raleway and Roboto fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;500&display=swap');
 
+/* color variables*/
+:root {
+    --pink-color: #D85CDC;
+    --dark-pink: #AC54D0;
+    --black-color: #1A1A1A;
+    --light-gray: #CECECE;
+    --dark-gray: #7C7C7C;
+}
 
 /*-------------------------------- Universal selectors*/
 a,p,li {
-    font-family: 'roboto';
+    font-family: 'roboto', sans-serif;
     font-weight: 400;
 }
+h1 {
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+}
 /*-------------------------------- Header/Navbar*/
-
+nav {
+    padding: 12px 70px !important;
+}
+.nav-active {
+    color: var(--pink-color);
+    font-weight: 600;
+}
+.navbar-brand {
+    color: var(--pink-color);
+    font-size: 1.4rem;
+    font-family: 'raleway', sans-serif;
+    font-weight: 600;
+}
 /*-------------------------------- Sections*/
+.main-section {
+    height: 70vh;
+    /* gradient makes the image a litle darker */
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+      ), url('https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-section-div {
+    padding: 0px 70px;
+    max-width: 710px;
+}
 
 /*-------------------------------- Footer*/
+
+/*-------------------------------- Buttons*/
 
 /*-------------------------------- Media queries*/
