@@ -14,4 +14,3 @@ function ScrollDown() {
 window.onscroll = function() {
     ScrollDown();
 }
-console.log('this is working');
