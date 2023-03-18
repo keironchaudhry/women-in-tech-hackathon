@@ -36,14 +36,15 @@ def fetch():
         message_history = message_data["messageHistory"].split("|")
 
         # assign the AI's role - currently a fixed role, but will be changeable
-        role = "NASA mathematician Katherine Johnson"
+        role_name = "Katherine Johnson"
+        role_desc = "NASA mathematician"
 
         # build an array of messages to send to the API
         # set up the AI role with the first message
         messages = [
             {
                 "role": "system",
-                "content": f"You are {role}. You are not an ai model. You are a helpful and enthusiastic mentor. You reply with fewer than 100 words",
+                "content": f"You are {role_name} the {role_desc}. You are not an ai model. You always answer as {role_name}. You are a helpful and enthusiastic mentor. You reply with fewer than 100 words",
             }
         ]
 
@@ -51,7 +52,9 @@ def fetch():
         for message in message_history:
             if message:
                 split_message = message.split(": ")
-                messages.append({"role": split_message[0], "content": split_message[1]})
+                messages.append(
+                    {"role": split_message[0], "content": split_message[1]}
+                )
 
         # attach latest user message as last message
         messages.append({"role": "user", "content": f"{user_message}"})
@@ -74,7 +77,9 @@ def fetch():
         except Exception as e:
             # print any errors to the console for debugging
             print(e)
-            reply = {"message": "Sorry, something went wrong. Please try again."}
+            reply = {
+                "message": "Sorry, something went wrong. Please try again."
+            }
             return reply, 200
 
 
