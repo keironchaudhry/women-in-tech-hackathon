@@ -1,0 +1,16 @@
+/*-------------------------------- Raleway and Roboto fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Roboto:wght@400;500&display=swap');
+
+
+/*-------------------------------- Universal selectors*/
+a,p,li {
+    font-family: 'roboto';
+    font-weight: 400;
+}
+/*-------------------------------- Header/Navbar*/
+
+/*-------------------------------- Sections*/
+
+/*-------------------------------- Footer*/
+
+/*-------------------------------- Media queries*/
