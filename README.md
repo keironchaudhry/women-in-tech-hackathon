@@ -4,7 +4,7 @@
 ### Project name: ChatWIT
 
 ## Meet ChatWIT!
-***
+
 ### Introduction (Charley to complete intro section later):
 
 what it does
@@ -19,21 +19,18 @@ link to live version
 - (if one is needed)
 
 ## User Experience
-***
 
 ### Target audience
 
 ### User stories 
 
 ## Features
-***
 Screenshots and descriptions of features go here
 
 ### Features for future implementation
 - if we think of any
 
 ## Technologies used
-***
 - HTML
 - CSS
 - JavaScript
@@ -42,22 +39,18 @@ Screenshots and descriptions of features go here
 - etc.
 
 ## Wireframes
-***
 screenshots go here (plus description if wished)
 
 ## Design
-***
-
 - Colour scheme + why it was chosen
 - Fonts + why they were chosen
 - anything else
 
 ## Function(?)
-***
 If someone wants to write about how the backend works?
 
 ## Testing
-***
+
 ### Links
 - Internal and external links were all checked and found to be working correctly
 
@@ -72,16 +65,14 @@ If someone wants to write about how the backend works?
 - any others?
 
 ## Bugs
-***
+
 ### Fixed bugs
 ### Remaining bugs (if any)
 
 ## Deployment
-***
 Instructions for deployment go here
 
 ## Credits
-***
 ### Content
 ### Media
 ### Acknowledgements
