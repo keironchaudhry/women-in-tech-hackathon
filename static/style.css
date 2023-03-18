@@ -31,7 +31,7 @@ h2 {
 /*-------------------------------- Header/Navbar*/
 nav {
   padding: 12px 70px !important;
-  background-color: #1a1a1a;
+  transition: 200ms;
 }
 .nav-active {
   color: var(--pink-color);
