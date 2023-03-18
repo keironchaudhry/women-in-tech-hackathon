@@ -18,7 +18,8 @@ li {
   font-weight: 400;
 }
 h1,
-h2 {
+h2,
+h4 {
   font-family: "raleway", sans-serif;
   font-weight: 700;
 }
@@ -27,6 +28,9 @@ h1 {
 }
 h2 {
   font-size: 3.5rem;
+}
+h4 {
+  font-weight: 600;
 }
 /*-------------------------------- Header/Navbar*/
 nav {
@@ -52,7 +56,12 @@ nav .nav-item a:hover {
 .navbar-brand:hover {
   color: var(--pink-color);
 }
+.nav-bg {
+  background-color: var(--black-color);
+}
 /*-------------------------------- Sections*/
+
+/*Main section*/
 .main-section {
   height: 70vh;
   /* gradient makes the image a litle darker */
@@ -83,6 +92,15 @@ nav .nav-item a:hover {
   height: 200px;
   width: 200px;
 }
+/*Selection section*/
+.card {
+  border-radius: 10px;
+}
+.card-body {
+  background-color: var(--black-color);
+  border-radius: 0px 0px 10px 10px;
+}
+
 /*-------------------------------- Footer*/
 footer {
   background-color: var(--black-color);
@@ -112,10 +130,12 @@ footer {
 }
 /*-------------------------------- Media queries*/
 
-@media (max-width: 700px) {
+@media (max-width:1000px) {
   nav {
     padding: 12px 0px !important;
   }
+}
+@media (max-width: 700px) {
   .main-section {
     height: 80vh;
   }
