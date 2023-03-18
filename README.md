@@ -1,11 +1,11 @@
 # **Women In Tech Hack-a-thon, March 2023**
 
-###Team name: TeamAI
-###Project name: ChatWIT
+### Team name: TeamAI
+### Project name: ChatWIT
 
-##Meet ChatWIT!
+## Meet ChatWIT!
 ***
-###Introduction (Charley to complete intro section later):
+### Introduction (Charley to complete intro section later):
 
 what it does
 
@@ -15,24 +15,24 @@ one main screenshot
 
 link to live version
 
-###Contents list
+### Contents list
 - (if one is needed)
 
-##User Experience
+## User Experience
 ***
 
-###Target audience
+### Target audience
 
-###User stories 
+### User stories 
 
-##Features
+## Features
 ***
 Screenshots and descriptions of features go here
 
-###Features for future implementation
+### Features for future implementation
 - if we think of any
 
-##Technologies used
+## Technologies used
 ***
 - HTML
 - CSS
@@ -41,55 +41,55 @@ Screenshots and descriptions of features go here
 - Figma
 - etc.
 
-##Wireframes
+## Wireframes
 ***
 screenshots go here (plus description if wished)
 
-##Design
+## Design
 ***
 
 - Colour scheme + why it was chosen
 - Fonts + why they were chosen
 - anything else
 
-##Function(?)
+## Function(?)
 ***
 If someone wants to write about how the backend works?
 
-##Testing
+## Testing
 ***
-###Links
+### Links
 - Internal and external links were all checked and found to be working correctly
 
-###Responsiveness
+### Responsiveness
 - Responsiveness was checked on a range of desktop and mobile devices and found to be functioning correctly
   
-###Validators/checkers used
+### Validators/checkers used
 - W3 HTML checker
 - W3 CSS checker
 - JSHint
 - Lighthouse
 - any others?
 
-##Bugs
+## Bugs
 ***
-###Fixed bugs
-###Remaining bugs (if any)
+### Fixed bugs
+### Remaining bugs (if any)
 
-##Deployment
+## Deployment
 ***
 Instructions for deployment go here
 
-##Credits
+## Credits
 ***
-###Content
-###Media
-###Acknowledgements
+### Content
+### Media
+### Acknowledgements
 This project was created collaboratively by TeamAI: Erik, Kieron, Liam, Amen, Wesley, Ben and Charley 
 
 **************
 
-##Temporary instructions section (delete before publishing):
+## Temporary instructions section (delete before publishing):
 
 Readme to be added.
 
