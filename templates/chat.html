@@ -1,36 +1,52 @@
 {% extends "base.html" %} {% block content %}
 <section class="mt-5">
     <h3>Women in Tech Hackathon</h3>
-    <div class="card">
-        <img src="" alt="" onclick="personInfo(choiceObjects[0])">
-        <h3 onclick="personInfo(choiceObjects[0])">Catherine Johnson</h3>
-        <p>jnjnjnjenfe</p>
+    <div class=" col-12 card-deck d-flex d-inline">
+        <div class="card col-3 d-flex d-inline">
+            <img src="" alt="person image" onclick="personInfo(choiceObjects[0])">
+            <h3 class="text-center" onclick="personInfo(choiceObjects[0])">Catherine Johnson</h3>
+            <p class="text-center">jnjnjnjenfe</p>
+        </div>
+        <div class="card col-3 d-flex d-inline">
+            <img src="" alt="" onclick="personInfo(choiceObjects[1])">
+            <h3 class="text-center" onclick="personInfo(choiceObjects[1])">Ada Lovelace</h3>
+            <p class="text-center">jnjnjnjenfe</p>
+        </div>
+        <div class="card col-3">
+            <img src="" alt="" onclick="personInfo(choiceObjects[2])">
+            <h3 class="text-center" onclick="personInfo(choiceObjects[2])">Catherine Johnson</h3>
+            <p class="text-center">jnjnjnjenfe</p>
+        </div>
+        <div class="card col-3">
+            <img src="" alt="" onclick="personInfo(choiceObjects[3])">
+            <h3 class="text-center" onclick="personInfo(choiceObjects[3])">Catherine Johnson</h3>
+            <p class="text-center">jnjnjnjenfe</p>
+        </div>
+        <div class="card col-3">
+            <img src="" alt="" onclick="personInfo(choiceObjects[4])">
+            <h3 class="text-center" onclick="personInfo(choiceObjects[4])">Catherine Johnson</h3>
+            <p class="text-center">jnjnjnjenfe</p>
+        </div>
     </div>
-    <div class="card">
-        <img src="" alt="" onclick="personInfo(choiceObjects[1])">
-        <h3 onclick="personInfo(choiceObjects[1])">Catherine Johnson</h3>
-        <p>jnjnjnjenfe</p>
-    </div>
-    <div class="card">
-        <img src="" alt="" onclick="personInfo(choiceObjects[2])">
-        <h3 onclick="personInfo(choiceObjects[2])">Catherine Johnson</h3>
-        <p>jnjnjnjenfe</p>
-    </div>
-    <div class="card">
-        <img src="" alt="" onclick="personInfo(choiceObjects[3])">
-        <h3 onclick="personInfo(choiceObjects[3])">Catherine Johnson</h3>
-        <p>jnjnjnjenfe</p>
-    </div>
-    <div class="card">
-        <img src="" alt="" onclick="personInfo(choiceObjects[4])">
-        <h3 onclick="personInfo(choiceObjects[4])">Catherine Johnson</h3>
-        <p>jnjnjnjenfe</p>
-    </div>
+    
     <button class="btn btn-success" onclick="personInfo(choiceObjects[0])"></button>
     <p id="pers-info"></p>
     {% for message in message_history%} {% if message %}
     <p>{{message}}</p>
     {% endif %} {% endfor %}
+    <form method="POST">
+        
+        <input id="user_message" name="user_message" /><br />
+        <input
+          type="hidden"
+          id="message_history"
+          name="message_history"
+          value="{% for message in message_history%}{% if message %}|{{message}}{% endif %}{% endfor %}"
+        />
+        <button type="button" onClick="sendMessage()">Submit</button>
+      </form>
+   
+
     <form id="sendMessageForm">
       <input id="user_message" name="user_message" /><br />
       <input
@@ -79,7 +95,7 @@
         occupation: "mathematician", 
     },
     {
-        name: "Catherine Johnson",
+        name: "test one",
         occupation: "mathematician", 
     },
     {
