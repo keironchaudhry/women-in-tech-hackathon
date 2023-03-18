@@ -22,6 +22,11 @@ def chat():
     return render_template("chat.html")
 
 
+@app.route("/selection")
+def selection():
+    return render_template("selection.html")
+
+
 @app.route("/fetch", methods=["GET", "POST"])
 def fetch():
     if request.method == "POST":
@@ -46,9 +51,7 @@ def fetch():
         for message in message_history:
             if message:
                 split_message = message.split(": ")
-                messages.append(
-                    {"role": split_message[0], "content": split_message[1]}
-                )
+                messages.append({"role": split_message[0], "content": split_message[1]})
 
         # attach latest user message as last message
         messages.append({"role": "user", "content": f"{user_message}"})
@@ -71,9 +74,7 @@ def fetch():
         except Exception as e:
             # print any errors to the console for debugging
             print(e)
-            reply = {
-                "message": "Sorry, something went wrong. Please try again."
-            }
+            reply = {"message": "Sorry, something went wrong. Please try again."}
             return reply, 200
 
 
