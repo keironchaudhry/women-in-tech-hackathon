@@ -33,12 +33,20 @@ nav {
     color: var(--pink-color);
     font-weight: 600;
 }
+/* nav item hover effect */
+nav .nav-item a:hover {
+    color: var(--light-gray) !important;
+}
 .navbar-brand {
     color: var(--pink-color);
     font-size: 1.4rem;
     font-family: 'raleway', sans-serif;
     font-weight: 600;
     margin: 0;
+}
+/* nav brand text hover effect */
+.navbar-brand:hover {
+    color: var(--pink-color);
 }
 /*-------------------------------- Sections*/
 .main-section {
@@ -80,6 +88,10 @@ footer {
     background-color: var(--pink-color);
     border-radius: 2rem;
     padding: 10px 70px;
+    transition: 200ms;
+}
+.btn-pink:hover {
+    background-color: var(--dark-pink);
 }
 /*-------------------------------- Icons*/
 .fa-arrow-right {
@@ -88,3 +100,17 @@ footer {
     padding-left: 5px;
 }
 /*-------------------------------- Media queries*/
+
+@media (max-width:700px) {
+    nav {
+        padding: 12px 0px !important;
+    }
+    .main-section {
+        height: 80vh;
+    }
+    .main-section-div, .about-div, footer {
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+}
