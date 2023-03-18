@@ -1,5 +1,96 @@
 # **Women In Tech Hack-a-thon, March 2023**
 
+###Team name: TeamAI
+###Project name: ChatWIT
+
+##Meet ChatWIT!
+***
+###Introduction (Charley to complete intro section later):
+
+what it does
+
+what it's for/rationale behind choosing the project
+
+one main screenshot
+
+link to live version
+
+###Contents list
+- (if one is needed)
+
+##User Experience
+***
+
+###Target audience
+
+###User stories 
+
+##Features
+***
+Screenshots and descriptions of features go here
+
+###Features for future implementation
+- if we think of any
+
+##Technologies used
+***
+- HTML
+- CSS
+- JavaScript
+- Flask
+- Figma
+- etc.
+
+##Wireframes
+***
+screenshots go here (plus description if wished)
+
+##Design
+***
+
+- Colour scheme + why it was chosen
+- Fonts + why they were chosen
+- anything else
+
+##Function(?)
+***
+If someone wants to write about how the backend works?
+
+##Testing
+***
+###Links
+- Internal and external links were all checked and found to be working correctly
+
+###Responsiveness
+- Responsiveness was checked on a range of desktop and mobile devices and found to be functioning correctly
+  
+###Validators/checkers used
+- W3 HTML checker
+- W3 CSS checker
+- JSHint
+- Lighthouse
+- any others?
+
+##Bugs
+***
+###Fixed bugs
+###Remaining bugs (if any)
+
+##Deployment
+***
+Instructions for deployment go here
+
+##Credits
+***
+###Content
+###Media
+###Acknowledgements
+This project was created collaboratively by TeamAI: Erik, Kieron, Liam, Amen, Wesley, Ben and Charley 
+
+**************
+
+##Temporary instructions section (delete before publishing):
+
 Readme to be added.
 
 Code Institute template has been used to create this IDE.
