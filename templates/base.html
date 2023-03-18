@@ -70,8 +70,6 @@
       <p class="navbar-brand">ChatWIT</p>
     </footer>
   </body>
-  <!-- navbar script -->
-  <script src="../static/navbar.js"></script>
    <!-- bootstrap 5 script -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -84,4 +82,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="assets/js/script.js"></script>
+  <!-- individual page scripts -->
+  {% block scripts %}
+  {% endblock %}
 </html>
