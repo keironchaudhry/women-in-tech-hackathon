@@ -34,56 +34,22 @@
     {% for message in message_history%} {% if message %}
     <p>{{message}}</p>
     {% endif %} {% endfor %}
-    <form method="POST">
-        
-        <input id="user_message" name="user_message" /><br />
-        <input
-          type="hidden"
-          id="message_history"
-          name="message_history"
-          value="{% for message in message_history%}{% if message %}|{{message}}{% endif %}{% endfor %}"
-        />
-        <button type="button" onClick="sendMessage()">Submit</button>
-      </form>
-   
-
-    <form id="sendMessageForm">
-      <input id="user_message" name="user_message" /><br />
-      <input
-        type="hidden"
-        id="message_history"
-        name="message_history"
-        value="{% for message in message_history%}{% if message %}|{{message}}{% endif %}{% endfor %}"
-      />
-      <button type="button" onClick="sendMessage()">Submit</button>
-    </form>
-  </section>
-  <script type="application/javascript">
-      const fetchURL = {{ url_for("fetch")|tojson }}
-      const userMessage = document.getElementById('user_message')
-      function sendMessage() {
-          let messageData = {
-              "userMessage": userMessage.value,
-          }
-          console.log(userMessage)
-          let jsonRequest = {
-              cache: "no-cache",
-              method: "POST",
-              headers: {
-                  'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(messageData),
-          }
-          fetch(fetchURL, jsonRequest)
-              .then(function (response) {
-                  return response.json();
-              })
-              .then(function (data) {
-                  console.log("POST data:");
-                  console.log(data);
-              });
-      }
-  </script>
+    <div id="chat_box"></div>
+  <form id="user_message_form">
+    <input id="user_message" name="user_message" /><br />
+    <input
+      type="hidden"
+      id="message_history"
+      name="message_history"
+      value="{% for message in message_history%}{% if message %}|{{message}}{% endif %}{% endfor %}"
+    />
+    <button type="submit">Submit</button>
+  </form>
+</section>
+<script type="application/javascript">
+    const fetchURL = {{ url_for("fetch")|tojson }}
+</script>
+<script src="{{url_for('static', filename='chat.js')}}"></script>
   <script>
     const choiceObjects = [
     {
