@@ -28,9 +28,7 @@
             <p class="text-center">jnjnjnjenfe</p>
         </div>
     </div>
-    
-    <button class="btn btn-success" onclick="personInfo(choiceObjects[0])"></button>
-    <p id="pers-info"></p>
+
     {% for message in message_history%} {% if message %}
     <p>{{message}}</p>
     {% endif %} {% endfor %}
@@ -43,7 +41,7 @@
       name="message_history"
       value="{% for message in message_history%}{% if message %}|{{message}}{% endif %}{% endfor %}"
     />
-    <button type="submit">Submit</button>
+    <button type="submit" onclick="fetch">Submit</button>
   </form>
 </section>
 <script type="application/javascript">

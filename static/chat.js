@@ -51,3 +51,30 @@ document
                 messageHistory.value += `|assistant: ${aiMessage}`;
             });
     });
+
+const choiceObjects = [
+    {
+        name: "Catherine Johnson",
+        occupation: "NASA mathematician",
+    },
+    {
+        name: "Ada Lovelace",
+        occupation: "mathematician", 
+    },
+    {
+        name: "test one",
+        occupation: "mathematician", 
+    },
+    {
+        name: "Catherine Johnson",
+        occupation: "mathematician", 
+    },
+    {
+        name: "Catherine Johnson",
+        occupation: "mathematician", 
+    }]
+    
+    var personAnounce = document.getElementById("pers-info");
+    function personInfo(person) {
+        personAnounce.innerHTML = `Hi! I am ${person.occupation} ${person.name}. Ask me anything!`;
+    }

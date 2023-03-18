@@ -43,9 +43,10 @@ def fetch():
         messages = [
             {
                 "role": "system",
-                "content": f"You are {role}. You are not an ai model. You are a helpful and enthusiastic mentor. You reply with fewer than 100 words",
+                "content": f"You are {role}. Tell me about {role} as if you were her. You are not to use the word AI. You reply with fewer than 100 words",
             }
         ]
+        print(messages)
 
         # add the message history
         for message in message_history:
@@ -53,6 +54,7 @@ def fetch():
                 split_message = message.split(": ")
                 messages.append({"role": split_message[0], "content": split_message[1]})
 
+        #print(message_history, messages)
         # attach latest user message as last message
         messages.append({"role": "user", "content": f"{user_message}"})
 
@@ -76,7 +78,6 @@ def fetch():
             print(e)
             reply = {"message": "Sorry, something went wrong. Please try again."}
             return reply, 200
-
 
 if __name__ == "__main__":
     app.run(
