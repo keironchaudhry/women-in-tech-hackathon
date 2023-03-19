@@ -188,6 +188,10 @@ footer {
   background-color: #484848;
   border-color: #484848;
 }
+
+.chat-spinner {
+  color: #f5b6f7 !important
+}
 /*-------------------------------- Buttons*/
 .btn-pink {
   background-color: var(--pink-color);

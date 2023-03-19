@@ -6,12 +6,35 @@ let roleName = "Katherine Johnson";
 let roleDesc = "NASA mathematician";
 
 function addMessage(type, message) {
+    // set inner and outer classes by message type
     let outerClass = type == "user" ? "ms-5 me-1" : "ms-1 me-5";
     let innerClass = type == "user" ? "bg-light" : "bg-reply";
+    // create new div and add styles and message
     let messageDiv = document.createElement("div");
     messageDiv.className = `card my-4 ${outerClass}`;
     messageDiv.innerHTML = `<div class="card-body text-dark ${innerClass} chat-card">${message}</div>`;
+    // append to chatbox
     chatBox.appendChild(messageDiv);
+}
+
+function removeSpinners() {
+    // select all spinner elements
+    const spinners = document.querySelectorAll(".chat-spinner");
+    // iterate through and remove all
+    spinners.forEach((spinner) => {
+        spinner.remove();
+    });
+}
+
+function addSpinner() {
+    // remove all spinners first
+    removeSpinners();
+    // create spinner element and add styles
+    let spinnerDiv = document.createElement("div");
+    spinnerDiv.className = "d-flex justify-content-center chat-spinner";
+    spinnerDiv.innerHTML = `<div role="status" class="spinner-border"><span class="visually-hidden">Loading...</span></div>`;
+    // append spinner to chatbox
+    chatBox.appendChild(spinnerDiv);
 }
 
 document
@@ -20,7 +43,12 @@ document
         // prevent submission of form
         event.preventDefault();
 
+        if (userMessage.value === "") {
+            return;
+        }
+
         addMessage("user", userMessage.value);
+        addSpinner();
 
         // build messageData object
         let messageData = {
@@ -50,6 +78,7 @@ document
                 return response.json();
             })
             .then(function (data) {
+                removeSpinners();
                 let replyMessage = data["message"];
 
                 // add response to chatbox
