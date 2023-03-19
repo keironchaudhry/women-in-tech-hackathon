@@ -42,6 +42,10 @@ The saying goes that, "You can't be what you can't see". ChatWIT acts as a link 
     * [Fonts](#fonts)
     * [Iconography](#iconography)
 * [Features](#features)
+    * [Navigation Bar](#navigation-bar)
+    * [Home Page]()
+    * [AI Selection Page]()
+    * [Chat Page]()
     * [Features for future implementation](#features-for-future-implementation)
 * [Testing](#testing)
 * [Bugs during development](#bugs-during-development)
@@ -123,11 +127,58 @@ We chose the current color palette for the website with the goal of creating a v
 
 # Features
 
-Screenshots and descriptions of features go here
+## **Navigation bar**
+
+* Contains links for site navigation throughout application, those being "Home" and "Chat".
+* The brand logo is a clickable button that returns the user to home page.
+* The navbar design has custom scroll effect which blends with the hero-image until scrolled downwards.
+* Navbar also responds to smaller viewport sizes.
+
+![navigation-bar](/documentation/features/navbar.png)
+![navigation-bar-2](/documentation/features/nabar%202.png)
+![navigation-bar-mobile](/documentation/features/navbar%20small.png)
+
+## **Home Page**
+
+* The home page is the first page seen upon visiting the web app.
+* It contains the navigation bar, introduction section + hero image, with a button to take users straight to the AI selection page.
+* An about section of the landing page which explains the purpose and use of the web app.
+* Contains five biography sections.
+* Contains the web app footer.
+
+![hero-image](/documentation/features/hero%20image.png)
+![mid-upper-section](/documentation/features/chat%20with%20women%20in%20tech%20history.png)
+![biographies](/documentation/features/biographies%201.png)
+![footer](/documentation/features/footer.png)
+
+## **AI Selection Page**
+
+* Selection page contains links and images of the AI models that can be engaged with.
+* Each link will take the user to their respective historical figure.
+
+![selection-page](/documentation/features/selections%20page.png)
+
+## **Chat Page**
+
+* Chat page contains a side bar with all available AI models, which users can use to navigate the AI models.
+* Contains the navbar for users to navigate their way back to the main page if necessary.
+* Also contains footer.
+* Chat with AI is modelled like a chat environment.
+* Speech with the AI moves it way upwards.
+* When AI is loading the conversation, a loading spinner is seen, indicating that data is being fetched.
+
+![chat-page-side-bar](/documentation/features/chat%20page%20side%20bar.png)
+![loader](/documentation/features/asset%20loader.png)
+
+* Below is a sampled conversation with the AI model:
+
+![sample-convo-1](/documentation/features/ai%20convo%20sample%201.png)
+![sample-convo-2](/documentation/features/ai%20convo%20sample%202.png)
+![sample-convo-3](/documentation/features/ai%20convo%20sample%203.png)
 
 ## Features for future implementation
 
-- if we think of any
+To be added.
 
 # Testing
 
