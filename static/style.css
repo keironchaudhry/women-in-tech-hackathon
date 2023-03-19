@@ -125,6 +125,9 @@ nav .nav-item a:hover {
   background-color: var(--black-color);
   border-radius: 0px 0px 10px 10px;
 }
+.card-img-top {
+  border-radius: 10px 10px 0px 0px;
+}
 
 /*-------------------------------- Footer*/
 footer {
