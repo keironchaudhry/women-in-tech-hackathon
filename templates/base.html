@@ -44,7 +44,7 @@
     <header class="align-items-center">
       <!-- Navbar with bootstrap classes -->
       <nav
-        class="navbar navbar-expand-md container-fluid fixed-top {% if 'selection' or 'chat' in request.endpoint -%}nav-bg{%- endif %}"
+        class="navbar navbar-expand-md container-fluid fixed-top dark-bg-mobile {% if 'selection' in request.endpoint or 'chat' in request.endpoint -%}nav-bg{%- endif %}"
         id="nav"
       >
         <div class="container-fluid">

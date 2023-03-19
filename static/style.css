@@ -289,4 +289,11 @@ footer {
   .introduction-mobile-screens p {
     font-size: 12.5px;
   }
+
+}
+
+@media (max-width: 768px) {
+  .dark-bg-mobile {
+    background-color: #1a1a1a!important;
+  }
 }
