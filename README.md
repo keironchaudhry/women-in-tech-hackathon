@@ -190,17 +190,52 @@ We chose the current color palette for the website with the goal of creating a v
 
 ## Manual testing
 
-Manual testing of user stories to be added.
+Manual testing of user stories can be found below:
 
-Template for manual testing can be the following for each user story: 
-
-User Story [#0]()
-
-As a **User**, I can **x** so that I can **y**.
+As a **user**, I can **navigate with ease throughout the web application**.
 
 | **Test** | Issue | Result |
 | --- | --- | --- |
-| 1 | Site Users can do something | PASS |
+| 1 | Ensure the functionality of a navigation bar throughout the application | PASS |
+
+As a **woman studying computer science**, I want to **learn more about the experiences of other historical women in tech** to inspire me in my studies and career.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 1 | Allow users to have access to AI models of historical women figures in computer science history | PASS |
+
+As a **user**, I can **use this web application on mobile as well as desktop with ease**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 1 | Ensure media query is apt for desktop screens | PASS |
+| 2 | Ensure media query is apt for mobile screens | PASS |
+
+As a **professional in the tech industry**, I want to **learn about the achievements and obstacles faced by women in this field** to **improve diversity and inclusion in my workplace**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 1 | Design the web application to be inviting to a diverse number of users | PASS |
+
+As a **user**, I can **communicate with the AI model in an online chat environment**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 1 | Design the chat environment so that users feel they are speaking to another user | PASS |
+
+As **someone interested in history**, I want to learn **about the contributions of women in the development of technology throughout history**.
+
+| **Test** | Issue | Result |
+| --- | --- | --- |
+| 1 | Allow users to have access to AI that teaches the historical role of women in the field of computer science | PASS |
+
+As a **user**, I can **variate between different AI character models**.
+| --- | --- | --- |
+| 1 | Create a variety of historical figures programmed in the AI chat environment for users to access | PASS |
+
+As a **parent**, I want **to expose my child to positive role models in the tech industry in order to encourage their interest in the field.**
+| --- | --- | --- |
+| 1 | Create a learning environment using ChatGPT AI modelled off tech industry historical figures | PASS |
 
 ## Lighthouse 
 
