@@ -99,7 +99,9 @@ nav .nav-item a:hover {
 .bio {
     margin-bottom: 1rem;
 }
-
+#bio-section h3 {
+  color: var(--pink-color);
+}
 #bio-header {
     text-align: center;
 }
