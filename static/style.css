@@ -209,6 +209,11 @@ footer {
   font-size: 0.9rem;
 }
 /*-------------------------------- Media queries*/
+@media (max-width:1440px) {
+  .main-section {
+    height: 80vh;
+  }
+}
 @media (min-width: 990px) and (max-width: 1280px) {
   .img-about2 {
      width: 72%;
