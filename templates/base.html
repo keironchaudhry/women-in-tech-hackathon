@@ -15,19 +15,40 @@
 
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../static/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../static/assets/favicon/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <link rel="manifest" href="../assets/icons/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../static/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../static/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../static/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <link rel="manifest" href="../assets/icons/site.webmanifest" />
     <title>Women in Tech</title>
   </head>
   <body>
     <header class="align-items-center">
       <!-- Navbar with bootstrap classes -->
-      <nav class="navbar navbar-expand-md container-fluid fixed-top {% if request.endpoint == 'selection' -%}nav-bg{%- endif %}" id="nav">
+      <nav
+        class="navbar navbar-expand-md container-fluid fixed-top {% if request.endpoint == 'selection' -%}nav-bg{%- endif %}"
+        id="nav"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">ChatWIT</a>
+          <a class="navbar-brand" href="{{ url_for('home') }}">ChatWIT</a>
           <button
             class="navbar-toggler text-white"
             type="button"
@@ -46,17 +67,17 @@
                 <a
                   class="nav-link active nav-active"
                   aria-current="page"
-                  href="#"
+                  href="{{ url_for('home') }}"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href=""
-                  >Chat</a
-                >
+                <a class="nav-link text-white" aria-current="page" href="{{ url_for('chat') }}">
+                  Chat
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#"
+                <a class="nav-link text-white" aria-current="page" href="{{ url_for('selection') }}"
                   >Woman in Tech</a
                 >
               </li>
@@ -71,7 +92,7 @@
       <p class="navbar-brand">ChatWIT</p>
     </footer>
   </body>
-   <!-- bootstrap 5 script -->
+  <!-- bootstrap 5 script -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -84,6 +105,5 @@
   ></script>
   <script src="assets/js/script.js"></script>
   <!-- individual page scripts -->
-  {% block scripts %}
-  {% endblock %}
+  {% block scripts %} {% endblock %}
 </html>
