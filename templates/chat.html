@@ -113,33 +113,4 @@
     const fetchURL = {{ url_for("fetch")|tojson }}
 </script>
 <script src="{{url_for('static', filename='chat.js')}}"></script>
-<script>
-    const choiceObjects = [
-        {
-            name: "Catherine Johnson",
-            occupation: "NASA mathematician",
-        },
-        {
-            name: "Ada Lovelace",
-            occupation: "mathematician",
-        },
-        {
-            name: "test one",
-            occupation: "mathematician",
-        },
-        {
-            name: "Catherine Johnson",
-            occupation: "mathematician",
-        },
-        {
-            name: "Catherine Johnson",
-            occupation: "mathematician",
-        },
-    ];
-
-    var personAnounce = document.getElementById("pers-info");
-    function personInfo(person) {
-        personAnounce.innerHTML = `Hi! I am ${person.occupation} ${person.name}. Ask me anything!`;
-    }
-</script>
 {% endblock %}

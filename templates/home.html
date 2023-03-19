@@ -8,7 +8,7 @@
              <div class="col-12 md-auto introduction-mobile-screens">
                  <h1 class="text-white">ChatWIT</h1>
                  <p class="text-white">Engage in a conversation with famous women in tech through our AI-powered chatbot. Ask questions about their work and challenges they faced. Choose from figures such as Ada Lovelace or Grace Hopper. Get insights and stories from women who made their mark in the tech industry.</p>
-                 <a class="btn btn-pink text-white" href="#">Engage Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                 <a class="btn btn-pink text-white" href="{{ url_for('chat') }}">Engage Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
              </div>
          </div>
      </section>
@@ -18,23 +18,23 @@
              <div class="row d-lg-flex justify-content-center d-md-block">
                  <!-- 2 columns inside the row -->
                <div class="col-md-12 col-lg-6">
-                 <h2>Chat with Women in Tech History</h2>
-                 <div class="about-text">
+                 <h2 class="text-md-center text-lg-start">Chat with Women in Tech History</h2>
+                 <div class="about-text mx-md-auto ms-lg-1">
                      <p>Welcome to ChatWIT, a project that lets you engage in a conversation with some of the most iconic women in the tech industry. Have you ever wondered what it was like to work alongside Ada Lovelace, the world's first programmer, or Grace Hopper, who pioneered the development of computer programming languages? Now, you can experience it firsthand with our AI-powered chatbot.</p>
-                      <!-- 3 Womans imgs div -->
+                      <!-- 3 Women imgs div -->
                      <div class="about-imgs d-flex gap-2 flex-wrap justify-content-sm-center">
                          <img class="img-about img-fluid flex-grow-1" src="../static/assets/imgs/ada.jpg" alt="Ada Lovelace">
                          <img class="img-about img-fluid flex-grow-1" src="../static/assets/imgs/grace.jpg" alt="Grace hopper">
-                         <img class="img-about img-fluid flex-grow-1" src="../static/assets/imgs/katherine.jpg" alt="Katherine johnson">
+                         <img class="img-about img-fluid flex-grow-1 d-lg-block d-none d-md-none" id="katherine" src="../static/assets/imgs/katherine.jpg" alt="Katherine johnson">
                      </div>
                  </div>
                </div>
-               <div class="col-md-12 col-lg-6" style="max-width: 630px;">
+               <div class="col-md-12 col-lg-6 mx-md-auto mx-lg-0" style="max-width: 630px;">
                  <!-- 2 logos imgs div -->
-                 <div class="about-imgs d-flex gap-2 flex-wrap mt-4 d-none d-md-flex">
-                     <img class="img-about flex-fill" src="../static/assets/imgs/ailogo.jpg" alt="ai logo">
-                     <img class="img-about flex-fill" src="../static/assets/imgs/female-simbol.jpg" alt="female symbol">
-                 </div>
+                 <div class="about-imgs2 d-flex flex-wrap gap-2 mt-4 d-none d-md-flex flex-nowrap">
+                    <img src="../static/assets/card_imgs/ailogo.svg" class="img-about2 img-fluid flex-shrink-1 flex-basis-10" alt="ai logo">
+                    <img src="../static/assets/card_imgs/female-symbol.svg" class="img-about2 img-fluid flex-shrink-1 flex-basis-10" alt="female symbol">
+                </div>
                  <h2 class="mt-4">Ask the Tech Legends</h2>
                  <div class="about-text">
                      <p>You can ask questions about their work, their personal life, and the challenges they faced during their careers, and the AI will answer as if it were that person. You'll gain a unique insight into the achievements and contributions of these remarkable women, and learn how they paved the way for women in tech today.</p>
@@ -45,74 +45,177 @@
            </div>
      </section>
      <!--Bio Section-->
-     <section id="bio-section">
-        <h2>Five impressive women to choose from</h2>
-        <div class="bio">
-            <div class="bio-div-img">
-                <h3>Ada Lovelace</h3>
-                <img class="img-bio" src="../static/assets/imgs/ada-lovelace.jpg" alt="Ada Lovelace">
+    <section id="bio-section">
+        <div class="container-fluid pe-md-4">
+            <div class="row">
+                <div class="col-12 pb-4">
+                    <h2 id="bio-header">Five trailblazing women to choose from</h2>
+                </div>
             </div>
-            <div class="bio-txt">
-                <p>Born on December 10, 1815, in London, England.
-                    Lovelace was the daughter of Lord Byron, a famous poet, and his wife Annabella Milbanke, a mathematician and writer.
-                    Lovelace showed an early aptitude for mathematics and science and was encouraged in her studies by her mother.
-                </p>
-                <h4>Achievements, Legacy & Impact</h4>
-                <p>
-                    In 1833, Lovelace met Charles Babbage, a mathematician and inventor who had developed plans for a machine he called the "Analytical Engine," which was designed to perform complex mathematical calculations. 
-                    Lovelace became fascinated by Babbage's ideas and worked with him on the development of the machine.
-                    Lovelace is credited with writing the world's first computer program, which was designed to be run on the Analytical Engine.
-                    In her notes on the machine, Lovelace outlined a method for calculating a sequence of numbers known as the Bernoulli numbers, which is considered to be the first algorithm intended to be processed by a machine.
-                    Lovelace's contributions to the development of computing were largely unrecognized during her lifetime, but she is now considered a pioneer in the field. 
-                    She is celebrated each year on "Ada Lovelace Day," which is an international celebration of women in science, technology, engineering, and mathematics (STEM) fields.
-                    Lovelace died on November 27, 1852, at the age of 36, but her work continues to inspire generations of scientists and computer programmers around the world.
-                </p>
+            <div class="bio row">
+                <div class="bio-div-img col-md-3">
+                    <h3>Ada Lovelace</h3>
+                    <img class="img-bio" src="../static/assets/imgs/ada-lovelace.jpg" alt="Ada Lovelace">
+                </div>
+                <div class="bio-txt col-md-9">
+                    <p>Born on December 10, 1815, in London, England.
+                        Lovelace was the daughter of Lord Byron, a famous poet, and his wife Annabella Milbanke, a
+                        mathematician and writer.
+                        Lovelace showed an early aptitude for mathematics and science and was encouraged in her studies
+                        by her mother.
+                    </p>
+                    <h4>Achievements, Legacy & Impact</h4>
+                    <p>
+                        In 1833, Lovelace met Charles Babbage, a mathematician and inventor who had developed plans for
+                        a machine he called the "Analytical Engine," which was designed to perform complex mathematical
+                        calculations.
+                        Lovelace became fascinated by Babbage's ideas and worked with him on the development of the
+                        machine.
+                        Lovelace is credited with writing the world's first computer program, which was designed to be
+                        run on the Analytical Engine.
+                        In her notes on the machine, Lovelace outlined a method for calculating a sequence of numbers
+                        known as the Bernoulli numbers, which is considered to be the first algorithm intended to be
+                        processed by a machine.
+                        Lovelace's contributions to the development of computing were largely unrecognized during her
+                        lifetime, but she is now considered a pioneer in the field.
+                        She is celebrated each year on "Ada Lovelace Day," which is an international celebration of
+                        women in science, technology, engineering, and mathematics (STEM) fields.
+                        Lovelace died on November 27, 1852, at the age of 36, but her work continues to inspire
+                        generations of scientists and computer programmers around the world.
+                    </p>
+                </div>
+            </div>
+            <div class="bio row">
+                <div class="bio-div-img col-md-3">
+                    <h3>Katherine Johnson</h3>
+                    <img class="img-bio" src="../static/assets/imgs/katherine-johnson.jpg" alt="Katherine Johnson">
+                </div>
+                <div class="bio-txt col-md-9">
+                    <p>Born August 26, 1918, in White Sulphur Springs, West Virginia.</p>
+                    <h4>Achievements, Legacy & Impact</h4>
+                    <p>
+                        Johnson graduated from West Virginia State College with degrees in mathematics and French in
+                        1937.
+                        After completing her education, she taught at a black public school in Virginia for several
+                        years before joining the National Advisory Committee for Aeronautics (NACA), the predecessor to
+                        NASA, in 1953.
+                        At NACA, Johnson worked as a "human computer," performing complex calculations by hand for
+                        aeronautical research.
+                        She was part of a team of black women known as "computers" who played a crucial role in the
+                        development of the American space program.
+                        In the early 1960s, Johnson was assigned to the Space Task Group, where she played a key role in
+                        the development of the first manned spaceflight programs.
+                        She was responsible for calculating the trajectories for the Mercury and Apollo missions,
+                        including the flight of John Glenn, the first American to orbit the Earth.
+                        Johnson received numerous awards and honors for her contributions to the space program,
+                        including the Presidential Medal of Freedom, the nation's highest civilian honor, in 2015.
+                        She was the subject of the book and film "Hidden Figures," which tells the story of the black
+                        women who worked at NACA and NASA during the early days of the American space program.
+                        Johnson passed away on February 24, 2020, at the age of 101. She is remembered as a pioneer in
+                        the field of space exploration and a trailblazer for women and people of color in STEM fields.
+                    </p>
+                </div>
+            </div>
+            <div class="bio row">
+                <div class="bio-div-img col-md-3">
+                    <h3>Grace Hopper</h3>
+                    <img class="img-bio" src="../static/assets/imgs/grace-hopper.jpg" alt="Grace Hopper">
+                </div>
+                <div class="bio-txt col-md-9">
+                    <p>Born on May 30, 1975, in Wausau, Wisconsin.</p>
+                    <h4>Achievements, Legacy & Impact</h4>
+                    <p>
+                        Mayer earned a bachelor's degree in symbolic systems and a master's degree in computer science
+                        from Stanford University.
+                        After graduating, she joined Google in 1999 as the company's 20th employee and its first female
+                        engineer.
+                        At Google, Mayer played a key role in the development of some of the company's most successful
+                        products, including Google Search, Google Images, and Google Maps.
+                        She ultimately rose to the position of Vice President of Local, Maps, and Location Services.
+                        In 2012, Mayer was hired as the President and CEO of Yahoo!, making her one of the most
+                        prominent female executives in the technology industry.
+                        During her tenure at Yahoo!, Mayer oversaw a major overhaul of the company's products and
+                        services, and helped to revive the company's fortunes after a period of decline.
+                        In 2017, Mayer left Yahoo! following the company's acquisition by Verizon Communications.
+                        She has since been involved in several technology startups and has served on the boards of
+                        several prominent companies, including Walmart and San Francisco Museum of Modern Art.
+                        Mayer has been recognized for her contributions to the technology industry and her philanthropic
+                        efforts. She has been named one of the world's most powerful women by Forbes magazine and has
+                        received numerous awards for her work in the field of computer science. She continues to be
+                        active in the technology industry and is considered one of the most influential women in Silicon
+                        Valley.
+                    </p>
+                </div>
+            </div>
+            <div class="bio row">
+                <div class="bio-div-img col-md-3">
+                    <h3>Reshma Saujani</h3>
+                    <img class="img-bio" src="../static/assets/imgs/reshma-saujani.jpg" alt="Ada Lovelace">
+                </div>
+                <div class="bio-txt col-md-9">
+                    <p>
+                        Reshma Saujani is an American lawyer, activist, and entrepreneur 
+                        who is best known as the founder of Girls Who Code, 
+                        a non-profit organization that aims to close the gender gap in technology by teaching girls to code. 
+                        Saujani was born on October 26, 1975, in Illinois, and grew up in the suburbs of Chicago.
+                    </p>
+                    <h4>Achievements, Legacy & Impact</h4>
+                    <p>
+                        Saujani attended the University of Illinois at Urbana-Champaign, where she earned a degree in political 
+                        science. She later attended the Kennedy School of Government at Harvard University, where she earned 
+                        a Master's degree in public policy. Saujani also received her law degree from Yale Law School.
+                        After graduating from law school, Saujani worked as an attorney and also served as the deputy 
+                        public advocate for New York City. In 2010, she ran for Congress in New York's 14th congressional 
+                        district, but was unsuccessful in her bid. However, 
+                        her experience during the campaign led her to start Girls Who Code in 2012, 
+                        with the goal of addressing the gender gap in the technology industry.
+                        Under Saujani's leadership, Girls Who Code has grown into a national movement, 
+                        with programs in all 50 states and partnerships with major technology companies 
+                        such as Google, Twitter, and Microsoft. 
+                        The organization has reached over 90,000 girls to date, providing them 
+                        with access to coding education and 
+                        career opportunities.
+                        Saujani is also the author of several books, including "Girls Who Code: 
+                        Learn to Code and Change the World," which is aimed at encouraging young girls to pursue careers 
+                        in technology. She has been recognized for her work by numerous organizations, including Fortune magazine, 
+                        which named her one of the world's greatest leaders in 2016.
+                        Overall, Saujani is an influential figure in the tech industry and an advocate for diversity and inclusion 
+                        in the field. Through her work with Girls Who Code, she has helped to empower a new generation 
+                        of girls to pursue careers in technology, and has inspired others to work 
+                        towards creating a more equitable and inclusive industry.
+                    </p>
+                </div>
+            </div>
+            <div class="bio row">
+                <div class="bio-div-img col-md-3">
+                    <h3>Marry Keller</h3>
+                    <img class="img-bio" src="../static/assets/imgs/mary-keller.jpg" alt="Ada Lovelace">
+                </div>
+                <div class="bio-txt col-md-9">
+                    <p>
+                        Born 1913 and died in 1985. Became an American Roman Catholic religious sister, 
+                        In 1958, she earned a Ph.D. in Mathematics from the University of Wisconsin Madison. 
+                        Her doctoral dissertation was titled "Inductive Inference on Computer Generated Patterns"
+                        In 1958 she started at the National Science Foundation workshop in the computer science department 
+                        at Dartmouth College which at the time was an all-male school. 
+                    </p>
+                    <h4>Achievements, Legacy & Impact</h4>
+                    <p>
+                        In 1965, Keller was one of the first women to earn a Ph.D. in computer science.
+                        Is known for her work on programming languages and computer-assisted instruction. 
+                        She worked on the development of the BASIC programming language, which was designed 
+                        to be more accessible and user-friendly than other programming languages at the time.
+                        She went on to develop a computer science department in a catholic college 
+                        for women called Clarke College. For 20 years she chaired the department where she was an advocate 
+                        for women in computer science, and supported working mothers by encouraging them to bring their babies 
+                        to class with them. She is known as one of the famous women in technology for being the first 
+                        woman to receive a PH.D in computer science, and Clarke University (Clarke College) 
+                        have established the Mary Keller Computer Science Scholarship in her honour
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="bio>
-            <div class="bio-div-img">
-                <h3>Katherine Johnson</h3>
-                <img class="img-bio" src="../static/assets/imgs/katherine-johnson.jpg" alt="Katherine Johnson">
-            </div>
-            <div class="bio-txt">
-                <p>Born August 26, 1918, in White Sulphur Springs, West Virginia.</p>
-                <h4>Achievements, Legacy & Impact</h4>
-                <p>
-                    Johnson graduated from West Virginia State College with degrees in mathematics and French in 1937.
-                    After completing her education, she taught at a black public school in Virginia for several years before joining the National Advisory Committee for Aeronautics (NACA), the predecessor to NASA, in 1953.
-                    At NACA, Johnson worked as a "human computer," performing complex calculations by hand for aeronautical research. 
-                    She was part of a team of black women known as "computers" who played a crucial role in the development of the American space program.
-                    In the early 1960s, Johnson was assigned to the Space Task Group, where she played a key role in the development of the first manned spaceflight programs. 
-                    She was responsible for calculating the trajectories for the Mercury and Apollo missions, including the flight of John Glenn, the first American to orbit the Earth.
-                    Johnson received numerous awards and honors for her contributions to the space program, including the Presidential Medal of Freedom, the nation's highest civilian honor, in 2015. 
-                    She was the subject of the book and film "Hidden Figures," which tells the story of the black women who worked at NACA and NASA during the early days of the American space program.
-                    Johnson passed away on February 24, 2020, at the age of 101. She is remembered as a pioneer in the field of space exploration and a trailblazer for women and people of color in STEM fields.
-                </p>
-            </div>
-        </div>
-        
-        <div class="bio>
-            <div class="bio-div-img">
-                <h3>Grace Hopper</h3>
-                <img class="img-bio" src="../static/assets/imgs/grace-hopper.jpg" alt="Grace Hopper">
-            </div>
-            <div class="bio-txt">
-                <p>Born on May 30, 1975, in Wausau, Wisconsin.</p>
-                <h4>Achievements, Legacy & Impact</h4>
-                <p>
-                    Mayer earned a bachelor's degree in symbolic systems and a master's degree in computer science from Stanford University. 
-                    After graduating, she joined Google in 1999 as the company's 20th employee and its first female engineer.
-                    At Google, Mayer played a key role in the development of some of the company's most successful products, including Google Search, Google Images, and Google Maps. 
-                    She ultimately rose to the position of Vice President of Local, Maps, and Location Services.
-                    In 2012, Mayer was hired as the President and CEO of Yahoo!, making her one of the most prominent female executives in the technology industry. 
-                    During her tenure at Yahoo!, Mayer oversaw a major overhaul of the company's products and services, and helped to revive the company's fortunes after a period of decline.
-                    In 2017, Mayer left Yahoo! following the company's acquisition by Verizon Communications. 
-                    She has since been involved in several technology startups and has served on the boards of several prominent companies, including Walmart and San Francisco Museum of Modern Art.
-                    Mayer has been recognized for her contributions to the technology industry and her philanthropic efforts. She has been named one of the world's most powerful women by Forbes magazine and has received numerous awards for her work in the field of computer science. She continues to be active in the technology industry and is considered one of the most influential women in Silicon Valley.
-                </p>
-            </div>
-        </div> 
-     </section>
+    </section>
 {% endblock %}
 
 {% block scripts %}
