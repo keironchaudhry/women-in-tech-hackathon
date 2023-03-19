@@ -1,4 +1,37 @@
-<svg width="100%" height="auto" viewBox="0 0 294 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="294" height="219" viewBox="0 0 294 219" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="294" height="219" fill="#191919"/>
-<path d="M136.656 83.1094L117.203 141H103.562L129.062 72.75H137.781L136.656 83.1094ZM152.922 141L133.375 83.1094L132.203 72.75H140.969L166.609 141H152.922ZM152.031 115.641V125.812H115.422V115.641H152.031ZM187.375 72.75V141H174.484V72.75H187.375Z" fill="white"/>
+<path d="M138.844 95.4062L125.875 134H116.781L133.781 88.5H139.594L138.844 95.4062ZM149.688 134L136.656 95.4062L135.875 88.5H141.719L158.812 134H149.688ZM149.094 117.094V123.875H124.688V117.094H149.094ZM172.656 88.5V134H164.062V88.5H172.656Z" fill="white"/>
+<rect x="103" y="68" width="87" height="87" rx="5" stroke="white" stroke-width="8"/>
+<line x1="146.5" y1="45" x2="146.5" y2="72" stroke="white" stroke-width="5"/>
+<circle cx="146.5" cy="40.5" r="5.5" stroke="#FDFDFD" stroke-width="4"/>
+<path d="M173 49C173 57.3243 173 61.9915 173 70.3158" stroke="white" stroke-width="3"/>
+<circle cx="173" cy="47" r="3" stroke="#FDFDFD" stroke-width="3"/>
+<path d="M120 50C120 58.3243 120 62.9915 120 71.3158" stroke="white" stroke-width="3"/>
+<circle cx="120" cy="48" r="3" stroke="#FDFDFD" stroke-width="3"/>
+<path d="M173 177C173 168.676 173 164.009 173 155.684" stroke="white" stroke-width="3"/>
+<circle cx="3" cy="3" r="3" transform="matrix(1 0 0 -1 170 182)" stroke="#FDFDFD" stroke-width="3"/>
+<path d="M120 176C120 167.676 120 163.009 120 154.684" stroke="white" stroke-width="3"/>
+<circle cx="3" cy="3" r="3" transform="matrix(1 0 0 -1 117 181)" stroke="#FDFDFD" stroke-width="3"/>
+<path d="M212.93 90.0148C204.606 90.0272 199.939 90.0341 191.615 90.0464" stroke="white" stroke-width="3"/>
+<circle cx="3" cy="3" r="3" transform="matrix(-0.0014821 -0.999999 -0.999999 0.0014821 217.935 93.0074)" stroke="#FDFDFD" stroke-width="3"/>
+<path d="M212.009 132.059C203.685 132.072 199.017 132.079 190.693 132.091" stroke="white" stroke-width="3"/>
+<circle cx="3" cy="3" r="3" transform="matrix(-0.0014821 -0.999999 -0.999999 0.0014821 217.013 135.052)" stroke="#FDFDFD" stroke-width="3"/>
+<path d="M80.0059 91.0148C88.3302 91.0272 92.9973 91.0341 101.322 91.0464" stroke="white" stroke-width="3"/>
+<circle cx="78.0059" cy="91.0119" r="3" transform="rotate(-89.9151 78.0059 91.0119)" stroke="#FDFDFD" stroke-width="3"/>
+<path d="M80.9274 133.059C89.2517 133.072 93.9188 133.079 102.243 133.091" stroke="white" stroke-width="3"/>
+<circle cx="78.9274" cy="133.056" r="3" transform="rotate(-89.9151 78.9274 133.056)" stroke="#FDFDFD" stroke-width="3"/>
+<line x1="147.5" y1="179" x2="147.5" y2="152" stroke="white" stroke-width="5"/>
+<circle cx="147.5" cy="183.5" r="5.5" transform="rotate(-180 147.5 183.5)" stroke="#FDFDFD" stroke-width="4"/>
+<line y1="-2.5" x2="27" y2="-2.5" transform="matrix(-0.999997 0.00251875 0.00251875 0.999997 220.023 114.03)" stroke="white" stroke-width="5"/>
+<circle cx="5.5" cy="5.5" r="5.5" transform="matrix(-0.00251875 -0.999997 -0.999997 0.00251875 230.03 117.005)" stroke="#FDFDFD" stroke-width="4"/>
+<line x1="74.0163" y1="111.53" x2="101.016" y2="111.598" stroke="white" stroke-width="5"/>
+<circle cx="69.5164" cy="111.519" r="5.5" transform="rotate(-89.8557 69.5164 111.519)" stroke="#FDFDFD" stroke-width="4"/>
+<path d="M79.2258 52.6111V68.6635L85.3226 75H101" stroke="white" stroke-width="5"/>
+<ellipse cx="4.74801" cy="4.80236" rx="4.74801" ry="4.80236" transform="matrix(-0.00410866 -0.999992 0.999992 -0.00401619 74.0391 53.5345)" stroke="#FDFDFD" stroke-width="5"/>
+<path d="M215.774 52.6111V68.6635L209.677 75H194" stroke="white" stroke-width="5"/>
+<ellipse cx="4.74801" cy="4.80236" rx="4.74801" ry="4.80236" transform="matrix(0.00410866 -0.999992 -0.999992 -0.00401619 220.961 53.5345)" stroke="#FDFDFD" stroke-width="5"/>
+<path d="M78.2258 171.389V155.336L84.3226 149H100" stroke="white" stroke-width="5"/>
+<ellipse cx="4.74801" cy="4.80236" rx="4.74801" ry="4.80236" transform="matrix(-0.00410866 0.999992 0.999992 0.00401619 73.0391 170.465)" stroke="#FDFDFD" stroke-width="5"/>
+<path d="M214.774 171.389V155.336L208.677 149H193" stroke="white" stroke-width="5"/>
+<ellipse cx="4.74801" cy="4.80236" rx="4.74801" ry="4.80236" transform="matrix(0.00410866 0.999992 -0.999992 0.00401619 219.961 170.465)" stroke="#FDFDFD" stroke-width="5"/>
 </svg>
