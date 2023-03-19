@@ -56,7 +56,9 @@ def fetch():
                     {"role": split_message[0], "content": split_message[1]}
                 )
 
-        #print(message_history, messages)
+        #remove the oldest stored messages
+        while len(message_history) >= 6:  
+            message_history.pop(0)
         # attach latest user message as last message
         messages.append({"role": "user", "content": f"{user_message}"})
 
