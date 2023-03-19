@@ -32,7 +32,7 @@ document
             },
             body: JSON.stringify(messageData),
         };
-        
+
         // add message to history and empty input box
         messageHistory.value += `|user: ${userMessage.value}`;
         userMessage.value = "";
@@ -58,34 +58,14 @@ document
             });
     });
 
-const choiceObjects = [
-    {
-        name: "Catherine Johnson",
-        occupation: "NASA mathematician",
-    },
-    {
-        name: "Ada Lovelace",
-        occupation: "mathematician", 
-    },
-    {
-        name: "test one",
-        occupation: "mathematician", 
-    },
-    {
-        name: "Catherine Johnson",
-        occupation: "mathematician", 
-    },
-    {
-        name: "Catherine Johnson",
-        occupation: "mathematician", 
-    }]
-    
-    var personAnounce = document.getElementById("pers-info");
-    function personInfo(person) {
-        personAnounce.innerHTML = `Hi! I am ${person.occupation} ${person.name}. Ask me anything!`;
-    }
-
-document.getElementById('chat_selector').addEventListener('click', function (e) {
-    roleName = e.target.dataset.name;
-    roleDesc = e.target.dataset.desc;
-})
+document
+    .getElementById("chat_selector")
+    .addEventListener("click", function (e) {
+        roleName = e.target.dataset.name;
+        roleDesc = e.target.dataset.desc;
+        chatBox.innerHTML = "";
+        let replyDiv = document.createElement("div");
+        replyDiv.className = "card my-4 ms-1 me-5";
+        replyDiv.innerHTML = `<div class="card-body text-dark bg-reply chat-card">Hi! I am ${roleName} the ${roleDesc}. Ask me anything!</div>`;
+        chatBox.appendChild(replyDiv);
+    });
