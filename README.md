@@ -14,7 +14,7 @@ Choose the woman you would like to chat to, and ask her any questions you have a
 
 The live site is deployed at: [https://women-in-tech-hackathon.herokuapp.com/](https://women-in-tech-hackathon.herokuapp.com/)
 
-# AIms of the project
+# Aims of the project
 
 ## Representation
 
