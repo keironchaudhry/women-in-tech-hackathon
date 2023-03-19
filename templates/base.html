@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,11 +40,11 @@
     <link rel="manifest" href="../assets/icons/site.webmanifest" />
     <title>Women in Tech</title>
   </head>
-  <body>
+  <body class="d-flex flex-column h-100">
     <header class="align-items-center">
       <!-- Navbar with bootstrap classes -->
       <nav
-        class="navbar navbar-expand-md container-fluid fixed-top {% if request.endpoint == 'selection' -%}nav-bg{%- endif %}"
+        class="navbar navbar-expand-md container-fluid fixed-top {% if 'selection' or 'chat' in request.endpoint -%}nav-bg{%- endif %}"
         id="nav"
       >
         <div class="container-fluid">
@@ -65,19 +65,19 @@
             <ul class="navbar-nav ms-auto text-center">
               <li class="nav-item">
                 <a
-                  class="nav-link active nav-active"
+                  class="nav-link {% if 'home' in request.endpoint %}active nav-active{% endif %}"
                   aria-current="page"
                   href="{{ url_for('home') }}"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="{{ url_for('chat') }}">
+                <a class="nav-link {% if 'chat' in request.endpoint %}active nav-active{% endif %}" aria-current="page" href="{{ url_for('chat') }}">
                   Chat
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="{{ url_for('selection') }}"
+                <a class="nav-link {% if 'selection' in request.endpoint %}active nav-active{% endif %}" aria-current="page" href="{{ url_for('selection') }}"
                   >Woman in Tech</a
                 >
               </li>
@@ -87,7 +87,7 @@
       </nav>
     </header>
     <main>{% block content %} {% endblock %}</main>
-    <footer class="d-flex align-items-center justify-content-between">
+    <footer class="d-flex align-items-center justify-content-between mt-auto">
       <p class="m-0">© 2023 All Rights Reserved</p>
       <p class="navbar-brand">ChatWIT</p>
     </footer>
@@ -103,7 +103,6 @@
     src="https://kit.fontawesome.com/7f07b7fc74.js"
     crossorigin="anonymous"
   ></script>
-  <script src="assets/js/script.js"></script>
   <!-- individual page scripts -->
   {% block scripts %} {% endblock %}
 </html>
