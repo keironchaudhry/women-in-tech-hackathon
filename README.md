@@ -88,15 +88,24 @@ A separate document for the wireframes can be found [here](/documentation/wirefr
 
 ## Colour
 
-Add colour palette design.
+![Colours palette](/documentation/Wireframes/Colours.jpg)
+
+* We chose the current color palette for the website with the goal of creating a visually appealing and empowering experience for our users. The shades of pink represent femininity and convey the message that our platform is dedicated to supporting Woman in tech. The use of black adds a sense of sophistication and strength, while the light and dark grays create a subtle contrast and help to balance the overall look of the website. Together, these colors work to create a cohesive and inspiring visual identity for our brand.
 
 ## Fonts
 
-To be added.
+* Raleway for the Headers
+* Roboto for body and general text
 
 ## Typography
 
-To be added.
+* H1,H2,H3 - Raleway bold
+
+* H3 - Raleway Medium
+
+* p,a,li - Roboto regular
+
+* Fallback font - Sans-serif
 
 # Features
 
