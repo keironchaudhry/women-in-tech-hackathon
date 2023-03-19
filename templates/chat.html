@@ -1,14 +1,18 @@
 {% extends "base.html" %} {% block content %}
 <section class="container-fluid mt-5">
     <div class="row">
-        <div class="col-3 ps-0">
+        <div class="col-md-4 col-lg-3 px-0 collapse order-3 order-md-1" id="collapseMobile">
             <div
                 class="d-flex flex-column flex-shrink-0 p-3 text-white chat-sidebar h-100"
             >
                 <hr />
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-white chat-sidebar-link" aria-current="page">
+                <ul class="nav nav-pills flex-column" id="chat_selector">
+                    <li class="nav-item chat-sidebar-active">
+                        <div
+                            class="nav-link text-white chat-sidebar-link"
+                            data-name="Katherine Johnson"
+                            data-desc="NASA mathematician"
+                        >
                             <img
                                 src="../static/assets/imgs/katherine.jpg"
                                 alt=""
@@ -17,10 +21,14 @@
                                 height="32"
                             />
                             Katherine Johnson
-                        </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white chat-sidebar-link">
+                        <div
+                            class="nav-link text-white chat-sidebar-link"
+                            data-name="Ada Lovelace"
+                            data-desc="first programmer"
+                        >
                             <img
                                 src="../static/assets/imgs/ada.jpg"
                                 alt=""
@@ -29,10 +37,14 @@
                                 height="32"
                             />
                             Ada Lovelace
-                        </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white chat-sidebar-link">
+                        <div
+                            class="nav-link text-white chat-sidebar-link"
+                            data-name="Grace Hopper"
+                            data-desc="computer scientist"
+                        >
                             <img
                                 src="../static/assets/imgs/grace.jpg"
                                 alt=""
@@ -41,10 +53,14 @@
                                 height="32"
                             />
                             Grace Hopper
-                        </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white chat-sidebar-link">
+                        <div
+                            class="nav-link text-white chat-sidebar-link"
+                            data-name="Reshma Saujani"
+                            data-desc="advocate for women in technology"
+                        >
                             <img
                                 src="../static/assets/imgs/reshma-saujani.jpg"
                                 alt=""
@@ -53,10 +69,14 @@
                                 height="32"
                             />
                             Reshma Saujani
-                        </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white chat-sidebar-link">
+                        <div
+                            class="nav-link text-white chat-sidebar-link"
+                            data-name="Mary Keller"
+                            data-desc="computer scientist"
+                        >
                             <img
                                 src="../static/assets/imgs/mary-keller.jpg"
                                 alt=""
@@ -64,21 +84,30 @@
                                 width="32"
                                 height="32"
                             />
-                            Marry Keller
-                        </a>
+                            Mary Keller
+                        </div>
                     </li>
                 </ul>
                 <hr />
             </div>
         </div>
 
-        <div class="col-9">
+        <div class="col-md-8 col-lg-9 order-1 order-md-2">
             <div class="row h-100">
                 <div
                     class="col-10 offset-1 d-flex flex-column justify-content-end"
                 >
                     <div class="chat-container">
-                        <div id="chat_box"></div>
+                        <div id="chat_box">
+                            <div class="card my-4 ms-1 me-5">
+                                <div
+                                    class="card-body text-dark bg-reply chat-card"
+                                >
+                                    Hi! I am Katherine Johnson the NASA
+                                    mathematician. Ask me anything!
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <form id="user_message_form">
                         <div class="input-group my-3">
@@ -99,16 +128,22 @@
                             type="hidden"
                             id="message_history"
                             name="message_history"
-                            value="{% for message in message_history%}{% if message %}|{{message}}{% endif %}{% endfor %}"
                         />
                     </form>
                 </div>
             </div>
         </div>
+        <div class="col-12 order-2 d-flex justify-content-center mt-2 d-md-none w-100 px-0">
+            <button class="btn btn-chat btn-chat-mobile px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMobile" aria-expanded="false" aria-controls="collapseMobile">
+                <div class="nav-link text-white px-0">
+                    <img src="../static/assets/imgs/katherine.jpg" alt="" class="rounded-circle me-2" width="32" height="32" id="mobile_img">
+                    <span id="mobile_name">Katherine Johnson</span>
+                </div><i class="fa-solid fa-bars icon" aria-hidden="true"></i>
+              </button>
+        </div>
     </div>
 </section>
-{% endblock %}
-{% block scripts %}
+{% endblock %} {% block scripts %}
 <script type="application/javascript">
     const fetchURL = {{ url_for("fetch")|tojson }}
 </script>
