@@ -9,33 +9,39 @@ let roleDesc = "";
 initialise();
 
 function initialise() {
-    // set roleName, roleDesc and pictureURL from query param
-    switch (selection) {
-        case "katherine":
-            roleName = "Katherine Johnson";
-            roleDesc = "NASA mathematician";
-            pictureURL = "../static/assets/imgs/katherine.jpg";
-            break;
-        case "ada":
-            roleName = "Ada Lovelace";
-            roleDesc = "first programmer";
-            pictureURL = "../static/assets/imgs/ada.jpg";
-            break;
-        case "grace":
-            roleName = "Grace Hopper";
-            roleDesc = "computer scientist";
-            pictureURL = "../static/assets/imgs/grace.jpg";
-            break;
-        case "reshma":
-            roleName = "Reshma Saujani";
-            roleDesc = "advocate for women in technology";
-            pictureURL = "../static/assets/imgs/reshma-saujani.jpg";
-            break;
-        case "mary":
-            roleName = "Mary Keller";
-            roleDesc = "computer scientist";
-            pictureURL = "../static/assets/imgs/mary-keller.jpg";
-            break;
+    if (selection) {
+        // set roleName, roleDesc and pictureURL from query param
+        switch (selection) {
+            case "katherine":
+                roleName = "Katherine Johnson";
+                roleDesc = "NASA mathematician";
+                pictureURL = "../static/assets/imgs/katherine.jpg";
+                break;
+            case "ada":
+                roleName = "Ada Lovelace";
+                roleDesc = "first programmer";
+                pictureURL = "../static/assets/imgs/ada.jpg";
+                break;
+            case "grace":
+                roleName = "Grace Hopper";
+                roleDesc = "computer scientist";
+                pictureURL = "../static/assets/imgs/grace.jpg";
+                break;
+            case "reshma":
+                roleName = "Reshma Saujani";
+                roleDesc = "advocate for women in technology";
+                pictureURL = "../static/assets/imgs/reshma-saujani.jpg";
+                break;
+            case "mary":
+                roleName = "Mary Keller";
+                roleDesc = "computer scientist";
+                pictureURL = "../static/assets/imgs/mary-keller.jpg";
+                break;
+        }
+    } else {
+        roleName = "Katherine Johnson";
+        roleDesc = "NASA mathematician";
+        pictureURL = "../static/assets/imgs/katherine.jpg";
     }
 
     // Update mobile menu name and picture
