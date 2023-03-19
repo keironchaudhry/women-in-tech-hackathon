@@ -1,6 +1,41 @@
 const userMessage = document.getElementById("user_message");
 const messageHistory = document.getElementById("message_history");
 const chatBox = document.getElementById("chat_box");
+const chatSelector = document.getElementById("chat_selector");
+let roleName = "Katherine Johnson";
+let roleDesc = "NASA mathematician";
+
+function addMessage(type, message) {
+    // set inner and outer classes by message type
+    let outerClass = type == "user" ? "ms-5 me-1" : "ms-1 me-5";
+    let innerClass = type == "user" ? "bg-light" : "bg-reply";
+    // create new div and add styles and message
+    let messageDiv = document.createElement("div");
+    messageDiv.className = `card my-4 ${outerClass}`;
+    messageDiv.innerHTML = `<div class="card-body text-dark ${innerClass} chat-card">${message}</div>`;
+    // append to chatbox
+    chatBox.appendChild(messageDiv);
+}
+
+function removeSpinners() {
+    // select all spinner elements
+    const spinners = document.querySelectorAll(".chat-spinner");
+    // iterate through and remove all
+    spinners.forEach((spinner) => {
+        spinner.remove();
+    });
+}
+
+function addSpinner() {
+    // remove all spinners first
+    removeSpinners();
+    // create spinner element and add styles
+    let spinnerDiv = document.createElement("div");
+    spinnerDiv.className = "d-flex justify-content-center chat-spinner";
+    spinnerDiv.innerHTML = `<div role="status" class="spinner-border"><span class="visually-hidden">Loading...</span></div>`;
+    // append spinner to chatbox
+    chatBox.appendChild(spinnerDiv);
+}
 
 document
     .getElementById("user_message_form")
@@ -8,15 +43,20 @@ document
         // prevent submission of form
         event.preventDefault();
 
-        let messageDiv = document.createElement("div");
-        messageDiv.className = "card my-4 ms-5 me-1";
-        messageDiv.innerHTML = `<div class="card-body text-dark bg-light chat-card">${userMessage.value}</div>`;
-        chatBox.appendChild(messageDiv);
+        // do not proceed with function if message is empty
+        if (userMessage.value === "") {
+            return;
+        }
+
+        addMessage("user", userMessage.value);
+        addSpinner();
 
         // build messageData object
         let messageData = {
             userMessage: userMessage.value,
             messageHistory: messageHistory.value,
+            roleName: roleName,
+            roleDesc: roleDesc,
         };
 
         // build JSON request to send to server
@@ -28,7 +68,7 @@ document
             },
             body: JSON.stringify(messageData),
         };
-        
+
         // add message to history and empty input box
         messageHistory.value += `|user: ${userMessage.value}`;
         userMessage.value = "";
@@ -39,44 +79,58 @@ document
                 return response.json();
             })
             .then(function (data) {
-                let aiMessage = data["message"];
-                console.log("POST data:");
-                console.log(aiMessage);
+                removeSpinners();
+                let replyMessage = data["message"];
 
                 // add response to chatbox
-                let replyDiv = document.createElement("div");
-                replyDiv.className = "card my-4 ms-1 me-5";
-                replyDiv.innerHTML = `<div class="card-body text-dark bg-reply chat-card">${aiMessage}</div>`;
-                chatBox.appendChild(replyDiv);
+                addMessage("reply", replyMessage);
 
                 // append reply to message history
-                messageHistory.value += `|assistant: ${aiMessage}`;
+                messageHistory.value += `|assistant: ${replyMessage}`;
             });
     });
 
-const choiceObjects = [
-    {
-        name: "Catherine Johnson",
-        occupation: "NASA mathematician",
-    },
-    {
-        name: "Ada Lovelace",
-        occupation: "mathematician", 
-    },
-    {
-        name: "test one",
-        occupation: "mathematician", 
-    },
-    {
-        name: "Catherine Johnson",
-        occupation: "mathematician", 
-    },
-    {
-        name: "Catherine Johnson",
-        occupation: "mathematician", 
-    }]
-    
-    var personAnounce = document.getElementById("pers-info");
-    function personInfo(person) {
-        personAnounce.innerHTML = `Hi! I am ${person.occupation} ${person.name}. Ask me anything!`;
+chatSelector.addEventListener("click", function (e) {
+    // set role name and description from data attributes of clicked element
+    roleName = e.target.dataset.name;
+    roleDesc = e.target.dataset.desc;
+
+    // update mobile menu picture url
+    let pictureURL = "";
+    switch (roleName) {
+        case "Katherine Johnson":
+            pictureURL = "../static/assets/imgs/katherine.jpg";
+            break;
+        case "Ada Lovelace":
+            pictureURL = "../static/assets/imgs/ada.jpg";
+            break;
+        case "Grace Hopper":
+            pictureURL = "../static/assets/imgs/grace.jpg";
+            break;
+        case "Reshma Saujani":
+            pictureURL = "../static/assets/imgs/reshma-saujani.jpg";
+            break;
+        case "Mary Keller":
+            pictureURL = "../static/assets/imgs/mary-keller.jpg";
+            break;
     }
+
+    document.getElementById('mobile_img').src = pictureURL;
+    document.getElementById('mobile_name').textContent = roleName;
+
+
+    // remove highlight from all selector elements
+    chatSelector.childNodes.forEach((element) => {
+        if (element.classList) {
+            element.classList.remove("chat-sidebar-active");
+        }
+    });
+    // add highlight to selected option
+    e.target.parentNode.classList.add("chat-sidebar-active");
+    // clear chatbox and message history
+    chatBox.innerHTML = "";
+    messageHistory.value = "";
+    // add greeting to chatbox
+    let message = `Hi! I am ${roleName} the ${roleDesc}. Ask me anything!`;
+    addMessage("reply", message);
+});
