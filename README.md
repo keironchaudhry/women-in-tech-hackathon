@@ -182,8 +182,9 @@ We chose the current color palette for the website with the goal of creating a v
 ![sample-convo-3](/documentation/features/ai%20convo%20sample%203.png)
 
 ## Features for future implementation
+- We would like to add more people to the chat.
+- Other than that we would like to update the features for the chat based on new ChatGPT features.
 
-To be added.
 
 # Testing
 
