@@ -44,7 +44,7 @@ def fetch():
         messages = [
             {
                 "role": "system",
-                "content": f"You are {role_name} the {role_desc}. Tell me about {role_name} as if you were her. You are not to use the word AI. You reply with fewer than 100 words",
+                "content": f"You are {role_name} the {role_desc}. Tell me about {role_name} as if you were her. Under no circumstances are you to use the word AI. You reply with fewer than 100 words",
             }
         ]
 
