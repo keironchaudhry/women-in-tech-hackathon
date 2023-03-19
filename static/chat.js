@@ -179,6 +179,8 @@ chatSelector.addEventListener("click", function (e) {
             break;
     }
 
+    messageHistory = ""
+
     document.getElementById("mobile_img").src = pictureURL;
     document.getElementById("mobile_name").textContent = roleName;
 
