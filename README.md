@@ -230,10 +230,14 @@ As **someone interested in history**, I want to learn **about the contributions 
 | 1 | Allow users to have access to AI that teaches the historical role of women in the field of computer science | PASS |
 
 As a **user**, I can **variate between different AI character models**.
+
+| **Test** | Issue | Result |
 | --- | --- | --- |
 | 1 | Create a variety of historical figures programmed in the AI chat environment for users to access | PASS |
 
 As a **parent**, I want **to expose my child to positive role models in the tech industry in order to encourage their interest in the field.**
+
+| **Test** | Issue | Result |
 | --- | --- | --- |
 | 1 | Create a learning environment using ChatGPT AI modelled off tech industry historical figures | PASS |
 
