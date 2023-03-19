@@ -38,8 +38,10 @@ nav {
   transition: 200ms;
 }
 .nav-active {
-  color: var(--pink-color);
-  font-weight: 600;
+  color: var(--pink-color)!important;
+}
+.nav-link {
+  color: #ffffff;
 }
 /* nav item hover effect */
 nav .nav-item a:hover {
