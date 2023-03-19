@@ -1,6 +1,7 @@
 const userMessage = document.getElementById("user_message");
 const messageHistory = document.getElementById("message_history");
 const chatBox = document.getElementById("chat_box");
+const chatSelector = document.getElementById("chat_selector");
 let roleName = "Katherine Johnson";
 let roleDesc = "NASA mathematician";
 
@@ -59,12 +60,22 @@ document
             });
     });
 
-document
-    .getElementById("chat_selector")
-    .addEventListener("click", function (e) {
-        roleName = e.target.dataset.name;
-        roleDesc = e.target.dataset.desc;
-        chatBox.innerHTML = "";
-        let message = `Hi! I am ${roleName} the ${roleDesc}. Ask me anything!`;
-        addMessage("reply", message);
+chatSelector.addEventListener("click", function (e) {
+    // set role name and description from data attributes of clicked element
+    roleName = e.target.dataset.name;
+    roleDesc = e.target.dataset.desc;
+    // remove highlight from all selector elements
+    chatSelector.childNodes.forEach((element) => {
+        if (element.classList) {
+            element.classList.remove("chat-sidebar-active");
+        }
     });
+    // add highlight to selected option
+    e.target.parentNode.classList.add("chat-sidebar-active");
+    // clear chatbox and message history
+    chatBox.innerHTML = "";
+    messageHistory.value = "";
+    // add greeting to chatbox
+    let message = `Hi! I am ${roleName} the ${roleDesc}. Ask me anything!`;
+    addMessage("reply", message);
+});

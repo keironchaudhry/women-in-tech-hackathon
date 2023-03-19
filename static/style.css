@@ -165,6 +165,10 @@ footer {
   background-color: #282828;
 }
 
+.chat-sidebar-active {
+  background-color: #282828;
+}
+
 .form-control:focus {
   color: #212529;
   background-color: #fff;
