@@ -157,6 +157,10 @@ footer {
   min-height: 90vh;
 }
 
+.chat-sidebar-link {
+  cursor: pointer;
+}
+
 .chat-sidebar-link:hover {
   background-color: #282828;
 }
