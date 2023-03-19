@@ -6,7 +6,7 @@
 
 # Meet ChatWIT!
 
-![amiresponsive]() 
+![homepage screenshots from amiresponsive](documentation/screenshots/ChatWIT-amiresponsive.png)
 
 ChatWIT (Women in Tech) uses the power of AI to enable you to chat directly with a range of pioneering women in tech from history to the present day.
 
@@ -26,7 +26,7 @@ The saying goes that, "You can't be what you can't see". ChatWIT acts as a link 
 
 - one main screenshot
 
-- link to live version
+The live site is deployed at: [https://women-in-tech-hackathon.herokuapp.com/](https://women-in-tech-hackathon.herokuapp.com/)
 
 ## **Table of content**
 
