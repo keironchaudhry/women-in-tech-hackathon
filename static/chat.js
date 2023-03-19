@@ -2,8 +2,73 @@ const userMessage = document.getElementById("user_message");
 const messageHistory = document.getElementById("message_history");
 const chatBox = document.getElementById("chat_box");
 const chatSelector = document.getElementById("chat_selector");
-let roleName = "Katherine Johnson";
-let roleDesc = "NASA mathematician";
+const selection = new URLSearchParams(window.location.search).get("selection");
+let pictureURL = "";
+let roleName = "";
+let roleDesc = "";
+initialise();
+
+function initialise() {
+    if (selection) {
+        // set roleName, roleDesc and pictureURL from query param
+        switch (selection) {
+            case "katherine":
+                roleName = "Katherine Johnson";
+                roleDesc = "NASA mathematician";
+                pictureURL = "../static/assets/imgs/katherine.jpg";
+                break;
+            case "ada":
+                roleName = "Ada Lovelace";
+                roleDesc = "first programmer";
+                pictureURL = "../static/assets/imgs/ada.jpg";
+                break;
+            case "grace":
+                roleName = "Grace Hopper";
+                roleDesc = "computer scientist";
+                pictureURL = "../static/assets/imgs/grace.jpg";
+                break;
+            case "reshma":
+                roleName = "Reshma Saujani";
+                roleDesc = "advocate for women in technology";
+                pictureURL = "../static/assets/imgs/reshma-saujani.jpg";
+                break;
+            case "mary":
+                roleName = "Mary Keller";
+                roleDesc = "computer scientist";
+                pictureURL = "../static/assets/imgs/mary-keller.jpg";
+                break;
+        }
+    } else {
+        roleName = "Katherine Johnson";
+        roleDesc = "NASA mathematician";
+        pictureURL = "../static/assets/imgs/katherine.jpg";
+    }
+
+    // Update mobile menu name and picture
+    document.getElementById("mobile_img").src = pictureURL;
+    document.getElementById("mobile_name").textContent = roleName;
+
+    // remove highlight from all selector elements
+    chatSelector.childNodes.forEach((element) => {
+        if (element.classList) {
+            element.classList.remove("chat-sidebar-active");
+        }
+    });
+
+    // add highlight to selected option
+    // console.log(selection+"_nav_link")
+    document
+        .querySelector(`[data-name="${roleName}"]`)
+        .parentNode.classList.add("chat-sidebar-active");
+
+    // clear chatbox and message history
+    chatBox.innerHTML = "";
+    messageHistory.value = "";
+
+    // add greeting to chatbox
+    let message = `Hi! I am ${roleName} the ${roleDesc}. Ask me anything!`;
+    addMessage("reply", message);
+}
 
 function addMessage(type, message) {
     // set inner and outer classes by message type
@@ -96,7 +161,6 @@ chatSelector.addEventListener("click", function (e) {
     roleDesc = e.target.dataset.desc;
 
     // update mobile menu picture url
-    let pictureURL = "";
     switch (roleName) {
         case "Katherine Johnson":
             pictureURL = "../static/assets/imgs/katherine.jpg";
@@ -115,9 +179,8 @@ chatSelector.addEventListener("click", function (e) {
             break;
     }
 
-    document.getElementById('mobile_img').src = pictureURL;
-    document.getElementById('mobile_name').textContent = roleName;
-
+    document.getElementById("mobile_img").src = pictureURL;
+    document.getElementById("mobile_name").textContent = roleName;
 
     // remove highlight from all selector elements
     chatSelector.childNodes.forEach((element) => {
