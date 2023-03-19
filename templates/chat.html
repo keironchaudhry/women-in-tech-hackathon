@@ -7,8 +7,12 @@
             >
                 <hr />
                 <ul class="nav nav-pills flex-column" id="chat_selector">
-                    <li class="nav-item">
-                        <div class="nav-link text-white chat-sidebar-link" data-name="Katherine Johnson" data-desc="NASA mathematician">
+                    <li class="nav-item chat-sidebar-active">
+                        <div
+                            class="nav-link text-white chat-sidebar-link"
+                            data-name="Katherine Johnson"
+                            data-desc="NASA mathematician"
+                        >
                             <img
                                 src="../static/assets/imgs/katherine.jpg"
                                 alt=""
@@ -20,7 +24,11 @@
                         </div>
                     </li>
                     <li>
-                        <div class="nav-link text-white chat-sidebar-link" data-name="Ada Lovelace" data-desc="first programmer">
+                        <div
+                            class="nav-link text-white chat-sidebar-link"
+                            data-name="Ada Lovelace"
+                            data-desc="first programmer"
+                        >
                             <img
                                 src="../static/assets/imgs/ada.jpg"
                                 alt=""
@@ -32,7 +40,11 @@
                         </div>
                     </li>
                     <li>
-                        <div class="nav-link text-white chat-sidebar-link" data-name="Grace Hopper" data-desc="computer scientist">
+                        <div
+                            class="nav-link text-white chat-sidebar-link"
+                            data-name="Grace Hopper"
+                            data-desc="computer scientist"
+                        >
                             <img
                                 src="../static/assets/imgs/grace.jpg"
                                 alt=""
@@ -44,7 +56,11 @@
                         </div>
                     </li>
                     <li>
-                        <div class="nav-link text-white chat-sidebar-link" data-name="Reshma Saujani" data-desc="advocate for women in technology">
+                        <div
+                            class="nav-link text-white chat-sidebar-link"
+                            data-name="Reshma Saujani"
+                            data-desc="advocate for women in technology"
+                        >
                             <img
                                 src="../static/assets/imgs/reshma-saujani.jpg"
                                 alt=""
@@ -56,7 +72,11 @@
                         </div>
                     </li>
                     <li>
-                        <div class="nav-link text-white chat-sidebar-link" data-name="Mary Keller" data-desc="computer scientist">
+                        <div
+                            class="nav-link text-white chat-sidebar-link"
+                            data-name="Mary Keller"
+                            data-desc="computer scientist"
+                        >
                             <img
                                 src="../static/assets/imgs/mary-keller.jpg"
                                 alt=""
@@ -78,7 +98,16 @@
                     class="col-10 offset-1 d-flex flex-column justify-content-end"
                 >
                     <div class="chat-container">
-                        <div id="chat_box"></div>
+                        <div id="chat_box">
+                            <div class="card my-4 ms-1 me-5">
+                                <div
+                                    class="card-body text-dark bg-reply chat-card"
+                                >
+                                    Hi! I am Katherine Johnson the NASA
+                                    mathematician. Ask me anything!
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <form id="user_message_form">
                         <div class="input-group my-3">
@@ -106,8 +135,7 @@
         </div>
     </div>
 </section>
-{% endblock %}
-{% block scripts %}
+{% endblock %} {% block scripts %}
 <script type="application/javascript">
     const fetchURL = {{ url_for("fetch")|tojson }}
 </script>
