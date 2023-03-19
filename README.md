@@ -112,8 +112,8 @@ A separate document for the wireframes can be found [here](/documentation/wirefr
 Screenshots and descriptions of features go here
 
 ## Features for future implementation
-
-- if we think of any
+- We would like to add more people to the chat.
+- Other than that we would like to update the features for the chat based on new ChatGPT features.
 
 # Testing
 
