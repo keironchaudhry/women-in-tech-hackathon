@@ -192,6 +192,18 @@ footer {
   border-radius: 0;
 }
 
+.chat-spinner {
+  color: #f5b6f7 !important
+}
+
+.chat-sidebar-active {
+  background-color: #282828;
+}
+
+.chat-sidebar-link {
+  cursor: pointer;
+}
+
 /*-------------------------------- Buttons*/
 .btn-pink {
   background-color: var(--pink-color);
