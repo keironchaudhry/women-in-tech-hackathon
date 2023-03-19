@@ -1,6 +1,7 @@
 # Wireframes
 
-The following wireframes were created and designed by Wesley Luiz da Souza.
+The following wireframes were created and designed by Wesley Luiz de Souza.
+We used wireframes to guide the development of the website, and made adjustments to the UI/UX as needed throughout the project. While we aimed to stay true to the original wireframes, some changes were made to ensure a better user experience.
 
 There were several designs pertaining to the design of the landing page, description, biographies section, AI selection, AI chat and general UI/UX design.
 
