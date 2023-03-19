@@ -62,11 +62,23 @@ The saying goes that, "You can't be what you can't see". ChatWIT acts as a link 
 
 ## Target audience
 
-To be added.
+The target audience is mainly girls/woman or anyone who are interested in learning about the
+experiences of woman in the tech industry. This include students and professionals in the tech industry.
+
 
 ## User stories 
 
-To be added.
+As a Girl studying computer science/software engineering, I 
+want to learn more about the experiences of woman in tech to inspire me in my studies and career.
+
+As a professional in the tech industry, I want to learn about the achievements and
+obstacles faced by woman in the field to improve diversity and inclusion in my workplace
+
+As someone interested in history, I want to learn about the contributions of woman in
+the development of technology throughout history.
+
+As a parent, I want to expose my child to positive role models in the
+tech industry in order to encourage their interest in the field
 
 Template: As a **User**, I can **x** so that I can **y**.
 
@@ -90,7 +102,7 @@ A separate document for the wireframes can be found [here](/documentation/wirefr
 
 ![Colours palette](/documentation/Wireframes/Colours.jpg)
 
-* We chose the current color palette for the website with the goal of creating a visually appealing and empowering experience for our users. The shades of pink represent femininity and convey the message that our platform is dedicated to supporting Woman in tech. The use of black adds a sense of sophistication and strength, while the light and dark grays create a subtle contrast and help to balance the overall look of the website. Together, these colors work to create a cohesive and inspiring visual identity for our brand.
+We chose the current color palette for the website with the goal of creating a visually appealing and empowering experience for our users. The shades of pink represent femininity and convey the message that our platform is dedicated to supporting Woman in tech. The use of black adds a sense of sophistication and strength, while the light and dark grays create a subtle contrast and help to balance the overall look of the website. Together, these colors work to create a cohesive and inspiring visual identity for our brand.
 
 ## Fonts
 
@@ -246,11 +258,9 @@ Deployment to Heroku can be done with the following guideline:
 
 ## Content
 
-To be added. 
-
 ## Media
+- [Home Page picture](./static/assets/bg-img.avif) : taken from [Unsplash](https://unsplash.com/photos/nF8xhLMmg0c) Author : Priscilla Du Preez
 
-To be added
 
 ## Acknowledgements
 
