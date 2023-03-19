@@ -66,7 +66,7 @@ nav .nav-item a:hover {
   height: 70vh;
   /* gradient makes the image a litle darker */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    url("./assets/bg-img.avif");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,7 +91,9 @@ nav .nav-item a:hover {
 }
 
 /*Bio section*/
-
+#bio-section {
+  background-color: var(--light-gray);
+}
 .bio {
     margin-bottom: 1rem;
 }
@@ -140,14 +142,21 @@ footer {
   padding: 10px 70px;
   transition: 200ms;
 }
+.btn-pink > i {
+  transition: 200ms;
+}
 .btn-pink:hover {
   background-color: var(--dark-pink);
+}
+.btn-pink:hover i {
+  transform: scale(1.2) translateX(2px);
 }
 /*-------------------------------- Icons*/
 .fa-arrow-right {
   position: relative;
   top: 1px;
   padding-left: 5px;
+  font-size: 0.9rem;
 }
 /*-------------------------------- Media queries*/
 @media (min-width: 990px) and (max-width: 1280px) {
