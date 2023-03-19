@@ -126,6 +126,11 @@ nav .nav-item a:hover {
 /*Selection section*/
 .card {
   border-radius: 10px;
+  transition: 200ms;
+}
+.card:hover {
+  box-shadow: 1px 3px 10px var(--dark-gray);
+  transform: scale(1.04);
 }
 .card-body {
   background-color: var(--black-color);
