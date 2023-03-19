@@ -19,6 +19,8 @@ document
         let messageData = {
             userMessage: userMessage.value,
             messageHistory: messageHistory.value,
+            roleName: roleName,
+            roleDesc: roleDesc,
         };
 
         // build JSON request to send to server

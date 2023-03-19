@@ -36,8 +36,8 @@ def fetch():
         message_history = message_data["messageHistory"].split("|")
 
         # assign the AI's role - currently a fixed role, but will be changeable
-        role_name = "Katherine Johnson"
-        role_desc = "NASA mathematician"
+        role_name = message_data["roleName"]
+        role_desc = message_data["roleDesc"]
 
         # build an array of messages to send to the API
         # set up the AI role with the first message
