@@ -4,16 +4,22 @@ const chatBox = document.getElementById("chat_box");
 let roleName = "Katherine Johnson";
 let roleDesc = "NASA mathematician";
 
+function addMessage(type, message) {
+    let outerClass = type == "user" ? "ms-5 me-1" : "ms-1 me-5";
+    let innerClass = type == "user" ? "bg-light" : "bg-reply";
+    let messageDiv = document.createElement("div");
+    messageDiv.className = `card my-4 ${outerClass}`;
+    messageDiv.innerHTML = `<div class="card-body text-dark ${innerClass} chat-card">${message}</div>`;
+    chatBox.appendChild(messageDiv);
+}
+
 document
     .getElementById("user_message_form")
     .addEventListener("submit", function (event) {
         // prevent submission of form
         event.preventDefault();
 
-        let messageDiv = document.createElement("div");
-        messageDiv.className = "card my-4 ms-5 me-1";
-        messageDiv.innerHTML = `<div class="card-body text-dark bg-light chat-card">${userMessage.value}</div>`;
-        chatBox.appendChild(messageDiv);
+        addMessage("user", userMessage.value);
 
         // build messageData object
         let messageData = {
@@ -43,18 +49,13 @@ document
                 return response.json();
             })
             .then(function (data) {
-                let aiMessage = data["message"];
-                console.log("POST data:");
-                console.log(aiMessage);
+                let replyMessage = data["message"];
 
                 // add response to chatbox
-                let replyDiv = document.createElement("div");
-                replyDiv.className = "card my-4 ms-1 me-5";
-                replyDiv.innerHTML = `<div class="card-body text-dark bg-reply chat-card">${aiMessage}</div>`;
-                chatBox.appendChild(replyDiv);
+                addMessage("reply", replyMessage);
 
                 // append reply to message history
-                messageHistory.value += `|assistant: ${aiMessage}`;
+                messageHistory.value += `|assistant: ${replyMessage}`;
             });
     });
 
@@ -64,8 +65,6 @@ document
         roleName = e.target.dataset.name;
         roleDesc = e.target.dataset.desc;
         chatBox.innerHTML = "";
-        let replyDiv = document.createElement("div");
-        replyDiv.className = "card my-4 ms-1 me-5";
-        replyDiv.innerHTML = `<div class="card-body text-dark bg-reply chat-card">Hi! I am ${roleName} the ${roleDesc}. Ask me anything!</div>`;
-        chatBox.appendChild(replyDiv);
+        let message = `Hi! I am ${roleName} the ${roleDesc}. Ask me anything!`;
+        addMessage("reply", message);
     });
