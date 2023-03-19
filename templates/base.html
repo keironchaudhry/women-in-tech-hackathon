@@ -72,7 +72,11 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link {% if 'selection' in request.endpoint or 'chat' in request.endpoint %}active nav-active{% endif %}" aria-current="page" href="{{ url_for('selection') }}">
+                <a
+                  class="nav-link {% if 'selection' in request.endpoint or 'chat' in request.endpoint %}active nav-active{% endif %}"
+                  aria-current="page"
+                  href="{{ url_for('selection') }}"
+                >
                   Chat
                 </a>
               </li>
@@ -82,7 +86,9 @@
       </nav>
     </header>
     <main>{% block content %} {% endblock %}</main>
-    <footer class="d-flex align-items-center justify-content-between mt-auto pt-3 pb-3">
+    <footer
+      class="d-flex align-items-center justify-content-between mt-auto pt-3 pb-3"
+    >
       <p class="m-0">© 2023 All Rights Reserved</p>
       <p class="navbar-brand">ChatWIT</p>
     </footer>

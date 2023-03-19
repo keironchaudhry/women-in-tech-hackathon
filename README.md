@@ -241,16 +241,15 @@ Lighthouse testing reports:
 
 * **W3C HTML Code Validator**
 
-    * Each page of the deployed website was run through the [HTML Markup Validation Service](https://validator.w3.org/) and returned x.
+    * The deployed URL was run through the [HTML Markup Validation Service](https://validator.w3.org/) and returned two errors which are related to Flask's template variables.
 
 * **W3C CSS Jigsaw Validator**
 
-    * CSS code was tested with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) via direct input and returned y.
-
+    * CSS code was tested with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) via direct input and returned no errors.
 
 * **JSHint validator**
 
-    * JavaScript code was tested with [JSHint](https://jshint.com/) and returned z.
+    * JavaScript code was tested with [JSHint](https://jshint.com/) and returned no errors.
 
 * **Python Validator**
 
