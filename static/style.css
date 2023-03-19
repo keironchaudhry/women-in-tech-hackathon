@@ -156,8 +156,13 @@ footer {
   background-color: #feefff!important;
 }
 
+.chat-sidebar {
+  background-color: #1f1f1f!important;
+  min-height: 90vh;
+}
+
 .chat-sidebar-link:hover {
-  background-color: #2d3338;
+  background-color: #282828;
 }
 
 .form-control:focus {
@@ -166,6 +171,18 @@ footer {
   border-color: #f8d2fa;
   outline: 0;
   box-shadow: 0 0 0 .25rem rgba(216, 92, 220,.18);
+}
+
+.btn-chat {
+  color: #fff;
+  background-color: #383838;
+  border-color: #383838;
+}
+
+.btn-chat:hover {
+  color: #fff;
+  background-color: #484848;
+  border-color: #484848;
 }
 /*-------------------------------- Buttons*/
 .btn-pink {
