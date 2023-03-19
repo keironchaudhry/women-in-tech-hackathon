@@ -22,9 +22,7 @@ ChatWIT's Women in Tech can also act as an AI mentor to people starting out in t
 
 ## Overcoming imposter syndrome
 
-The saying goes that, "You can't be what you can't see". ChatWIT acts as a link to just a selection of the many the women who have made their mark in the tech field, including women of colour, to reassert that women of varied backgrounds do have and have always had a well-deserved place in the tech industry. 
-
-- one main screenshot
+The saying goes that, "You can't be what you can't see". ChatWIT acts as a link to just a selection of the many the women who have made their mark in the tech field, including women of colour, to reassert that women of varied backgrounds do have and have always had a well-deserved place in the tech industry.
 
 The live site is deployed at: [https://women-in-tech-hackathon.herokuapp.com/](https://women-in-tech-hackathon.herokuapp.com/)
 
