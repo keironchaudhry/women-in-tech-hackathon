@@ -159,7 +159,6 @@ footer {
 
 .chat-sidebar {
   background-color: #1f1f1f!important;
-  min-height: 90vh;
 }
 
 .chat-sidebar-link:hover {
@@ -185,6 +184,14 @@ footer {
   background-color: #484848;
   border-color: #484848;
 }
+.btn-chat-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 0;
+}
+
 /*-------------------------------- Buttons*/
 .btn-pink {
   background-color: var(--pink-color);
@@ -209,6 +216,21 @@ footer {
   font-size: 0.9rem;
 }
 /*-------------------------------- Media queries*/
+@media screen and (min-width: 768px){
+  .collapse:not(.show) {
+      display: block;
+      height: auto !important;
+      visibility: visible;
+    }
+    .collapsing{
+      position: relative;
+      height: unset !important;
+      overflow: hidden;
+    }
+    .chat-sidebar {
+      min-height: 90vh;
+    }
+}
 @media (max-width:1440px) {
   .main-section {
     height: 80vh;
