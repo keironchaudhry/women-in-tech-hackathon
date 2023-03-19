@@ -128,7 +128,9 @@ nav .nav-item a:hover {
 .card-img-top {
   border-radius: 10px 10px 0px 0px;
 }
-
+.selection_link {
+  text-decoration: none;
+}
 /*-------------------------------- Footer*/
 footer {
   background-color: var(--black-color);
