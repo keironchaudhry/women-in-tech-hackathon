@@ -1,6 +1,8 @@
 const userMessage = document.getElementById("user_message");
 const messageHistory = document.getElementById("message_history");
 const chatBox = document.getElementById("chat_box");
+let roleName = "Katherine Johnson";
+let roleDesc = "NASA mathematician";
 
 document
     .getElementById("user_message_form")
@@ -80,3 +82,8 @@ const choiceObjects = [
     function personInfo(person) {
         personAnounce.innerHTML = `Hi! I am ${person.occupation} ${person.name}. Ask me anything!`;
     }
+
+document.getElementById('chat_selector').addEventListener('click', function (e) {
+    roleName = e.target.dataset.name;
+    roleDesc = e.target.dataset.desc;
+})
