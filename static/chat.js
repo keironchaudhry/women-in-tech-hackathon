@@ -43,6 +43,7 @@ document
         // prevent submission of form
         event.preventDefault();
 
+        // do not proceed with function if message is empty
         if (userMessage.value === "") {
             return;
         }
