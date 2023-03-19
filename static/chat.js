@@ -56,7 +56,6 @@ function initialise() {
     });
 
     // add highlight to selected option
-    // console.log(selection+"_nav_link")
     document
         .querySelector(`[data-name="${roleName}"]`)
         .parentNode.classList.add("chat-sidebar-active");
@@ -134,8 +133,8 @@ document
             body: JSON.stringify(messageData),
         };
 
-        // add message to history and empty input box
-        messageHistory.value += `|user: ${userMessage.value}`;
+        // cache use message and empty input box
+        let userMessageCache = userMessage.value;
         userMessage.value = "";
 
         // send fetch request to server
@@ -150,7 +149,11 @@ document
                 // add response to chatbox
                 addMessage("reply", replyMessage);
 
-                // append reply to message history
+                // clear message history
+                messageHistory.value = "";
+
+                // add user message and reply to message history
+                messageHistory.value += `|user: ${userMessageCache}`;
                 messageHistory.value += `|assistant: ${replyMessage}`;
             });
     });
@@ -178,8 +181,6 @@ chatSelector.addEventListener("click", function (e) {
             pictureURL = "../static/assets/imgs/mary-keller.jpg";
             break;
     }
-
-    messageHistory = ""
 
     document.getElementById("mobile_img").src = pictureURL;
     document.getElementById("mobile_name").textContent = roleName;
