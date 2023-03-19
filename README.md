@@ -16,6 +16,8 @@ The live site is deployed at: [https://women-in-tech-hackathon.herokuapp.com/](h
 
 # Aims of the project
 
+The project brief was to create a product which helps to overcome some of the barriers women face in the tech industry.
+
 ## Representation
 
 ChatWIT aims to help contribute to the visibility and representation of women in tech, by reminding all of us that there have always been women who have claimed their place in the "traditionally male-dominated field" of computing, and enabling us to learn more about these women and their accomplishments.  
