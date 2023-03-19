@@ -1,19 +1,30 @@
 # **Women In Tech Hack-a-thon, March 2023**
 
-### Team name: TeamAI
-### Project name: ChatWIT
+**Team name:** TeamAI
+
+**Project name:** ChatWIT
 
 ## Meet ChatWIT!
 
-### Introduction (Charley to complete intro section later):
+ChatWIT (Women in Tech) uses the power of AI to enable you to chat directly with a range of pioneering women in tech from history to the present day.
 
-what it does
+Choose the woman you would like to chat to, and ask her any questions you have about her life and work, achievements and obstacles, and more!  
 
-what it's for/rationale behind choosing the project
+### Representation
 
-one main screenshot
+ChatWIT aims to help contribute to the visibility and representation of women in tech, by reminding all of us that there have always been women who have claimed their place in the "traditionally male-dominated field" of computing, and enabling us to learn more about these women and their accomplishments.  
 
-link to live version
+### Mentoring
+
+ChatWIT's Women in Tech can also act as an AI mentor to people starting out in the field of tech by sharing the stories of their lives, the barriers they overcame and their tips for success.
+
+### Overcoming imposter syndrome
+
+The saying goes that, "You can't be what you can't see". ChatWIT acts as a link to just a selection of the many the women who have made their mark in the tech field, including women of colour, to reassert that women of varied backgrounds do have and have always had a well-deserved place in the tech industry. 
+
+- one main screenshot
+
+- link to live version
 
 ### Contents list
 - (if one is needed)
