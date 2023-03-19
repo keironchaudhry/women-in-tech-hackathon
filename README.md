@@ -198,7 +198,31 @@ As a **User**, I can **x** so that I can **y**.
 
 ## Lighthouse 
 
-To be added for desktop and mobile.
+Lighthouse testing reports:
+
+* Home page (desktop):
+
+![home-page-desktop](/documentation/lighthouse/lighthouse%20home%20page%20desktop.png)
+
+* Home page (mobile):
+
+![home-page-mobile](/documentation/lighthouse/lighthouse%20home%20page%20mobile.png)
+
+* Selection page (desktop):
+
+![selection-page-desktop](/documentation/lighthouse/lighthouse%20selection%20page%20desktop.png)
+
+* Selection page (mobile):
+
+![selection-page-mobile](/documentation/lighthouse/lighthouse%20selection%20page%20mobile.png)
+
+* Chat page (desktop):
+
+![chat-page-desktop](/documentation/lighthouse/lighthouse%20chat%20page%20desktop.png)
+
+* Chat page (mobile):
+
+![chat-page-mobile](/documentation/lighthouse/lighthouse%20chat%20page%20mobile.png)
 
 ## Links
 
@@ -308,8 +332,6 @@ Deployment to Heroku can be done with the following guideline:
 
 
 # Credits
-
-## Content
 
 ## Media
 - [Home Page picture](./static/assets/bg-img.avif) : taken from [Unsplash](https://unsplash.com/photos/nF8xhLMmg0c) Author : Priscilla Du Preez
