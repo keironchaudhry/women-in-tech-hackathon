@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %}
 <section class="container-fluid mt-5">
     <div class="row">
-        <div class="col-3 ps-0">
+        <div class="col-md-4 col-lg-3 px-0 collapse order-3 order-md-1" id="collapseMobile">
             <div
                 class="d-flex flex-column flex-shrink-0 p-3 text-white chat-sidebar h-100"
             >
@@ -92,7 +92,7 @@
             </div>
         </div>
 
-        <div class="col-9">
+        <div class="col-md-8 col-lg-9 order-1 order-md-2">
             <div class="row h-100">
                 <div
                     class="col-10 offset-1 d-flex flex-column justify-content-end"
@@ -132,6 +132,14 @@
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="col-12 order-2 d-flex justify-content-center mt-2 d-md-none w-100 px-0">
+            <button class="btn btn-chat btn-chat-mobile px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMobile" aria-expanded="false" aria-controls="collapseMobile">
+                <div class="nav-link text-white px-0">
+                    <img src="../static/assets/imgs/katherine.jpg" alt="" class="rounded-circle me-2" width="32" height="32" id="mobile_img">
+                    <span id="mobile_name">Katherine Johnson</span>
+                </div><i class="fa-solid fa-bars icon" aria-hidden="true"></i>
+              </button>
         </div>
     </div>
 </section>

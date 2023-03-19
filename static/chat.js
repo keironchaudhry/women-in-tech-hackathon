@@ -94,6 +94,31 @@ chatSelector.addEventListener("click", function (e) {
     // set role name and description from data attributes of clicked element
     roleName = e.target.dataset.name;
     roleDesc = e.target.dataset.desc;
+
+    // update mobile menu picture url
+    let pictureURL = "";
+    switch (roleName) {
+        case "Katherine Johnson":
+            pictureURL = "../static/assets/imgs/katherine.jpg";
+            break;
+        case "Ada Lovelace":
+            pictureURL = "../static/assets/imgs/ada.jpg";
+            break;
+        case "Grace Hopper":
+            pictureURL = "../static/assets/imgs/grace.jpg";
+            break;
+        case "Reshma Saujani":
+            pictureURL = "../static/assets/imgs/reshma-saujani.jpg";
+            break;
+        case "Mary Keller":
+            pictureURL = "../static/assets/imgs/mary-keller.jpg";
+            break;
+    }
+
+    document.getElementById('mobile_img').src = pictureURL;
+    document.getElementById('mobile_name').textContent = roleName;
+
+
     // remove highlight from all selector elements
     chatSelector.childNodes.forEach((element) => {
         if (element.classList) {
