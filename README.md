@@ -12,6 +12,10 @@ ChatWIT (Women in Tech) uses the power of AI to enable you to chat directly with
 
 Choose the woman you would like to chat to, and ask her any questions you have about her life and work, achievements and obstacles, and more!  
 
+The live site is deployed at: [https://women-in-tech-hackathon.herokuapp.com/](https://women-in-tech-hackathon.herokuapp.com/)
+
+# AIms of the project
+
 ## Representation
 
 ChatWIT aims to help contribute to the visibility and representation of women in tech, by reminding all of us that there have always been women who have claimed their place in the "traditionally male-dominated field" of computing, and enabling us to learn more about these women and their accomplishments.  
@@ -24,9 +28,7 @@ ChatWIT's Women in Tech can also act as an AI mentor to people starting out in t
 
 The saying goes that, "You can't be what you can't see". ChatWIT acts as a link to just a selection of the many the women who have made their mark in the tech field, including women of colour, to reassert that women of varied backgrounds do have and have always had a well-deserved place in the tech industry.
 
-The live site is deployed at: [https://women-in-tech-hackathon.herokuapp.com/](https://women-in-tech-hackathon.herokuapp.com/)
-
-## **Table of content**
+## **Table of contents**
 
 * [UX](#user-experience)
     * [Target audience](#target-audience)
