@@ -305,7 +305,9 @@ Link will eventually be added with fixes in Kanban board.
 
 ## Remaining bugs
 
-There are currently no remaining bugs that the developers are aware of.
+There is a margin issue on mobile screens lower than 430px.
+
+Other than this, there are no other known bugs or issues.
 
 ## Technologies and libraries used
 
