@@ -71,8 +71,8 @@ The saying goes that, "You can't be what you can't see". ChatWIT acts as a link 
 
 ## Target audience
 
-The target audience is mainly girls/woman or anyone who are interested in learning about the
-experiences of woman in the tech industry. This include students and professionals in the tech industry.
+The target audience is mainly girls/women or anyone who is interested in learning about the
+experiences of women in the tech industry. This includes students and professionals in the tech industry.
 
 
 ## User stories 
@@ -83,13 +83,13 @@ experiences of woman in the tech industry. This include students and professiona
 
 * As a user, I can use this web application on mobile as well as desktop with ease.
 
-* As a professional in the tech industry, I want to learn about the achievements and obstacles faced by women in this field to improve diversity and inclusion in my workplace
+* As a professional in the tech industry, I want to learn about the achievements and obstacles faced by women in this field to improve diversity and inclusion in my workplace.
 
 * As a user, I can communicate with the AI model in an online chat environment.
 
 * As someone interested in history, I want to learn about the contributions of women in the development of technology throughout history.
 
-* As a user, I can variate between different AI character models.
+* As a user, I can switch between different AI character models.
 
 * As a parent, I want to expose my child to the positive role models in the tech industry in order to encourage their interest in the field.
 
@@ -113,7 +113,7 @@ A separate document for the wireframes can be found [here](/documentation/wirefr
 
 ![Colours palette](/documentation/Wireframes/Colours.jpg)
 
-We chose the current color palette for the website with the goal of creating a visually appealing and empowering experience for our users. The shades of pink represent femininity and convey the message that our platform is dedicated to supporting Woman in tech. The use of black adds a sense of sophistication and strength, while the light and dark grays create a subtle contrast and help to balance the overall look of the website. Together, these colors work to create a cohesive and inspiring visual identity for our brand.
+We chose the current color palette for the website with the goal of creating a visually appealing and empowering experience for our users. The shades of pink represent femininity and convey the message that our platform is dedicated to supporting women in tech. The use of black adds a sense of sophistication and strength, while the light and dark grays create a subtle contrast and help to balance the overall look of the website. Together, these colors work to create a cohesive and inspiring visual identity for our brand.
 
 ## Fonts
 
@@ -134,7 +134,7 @@ We chose the current color palette for the website with the goal of creating a v
 
 ## **Navigation bar**
 
-* Contains links for site navigation throughout application, those being "Home" and "Chat".
+* Contains links for site navigation throughout the application, these being "Home" and "Chat".
 * The brand logo is a clickable button that returns the user to home page.
 * The navbar design has custom scroll effect which blends with the hero-image until scrolled downwards.
 * Navbar also responds to smaller viewport sizes.
@@ -229,7 +229,7 @@ As **someone interested in history**, I want to learn **about the contributions 
 | --- | --- | --- |
 | 1 | Allow users to have access to AI that teaches the historical role of women in the field of computer science | PASS |
 
-As a **user**, I can **variate between different AI character models**.
+As a **user**, I can **switch between different AI character models**.
 
 | **Test** | Issue | Result |
 | --- | --- | --- |
